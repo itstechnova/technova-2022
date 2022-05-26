@@ -7,6 +7,7 @@ import bridgeTile from "../../resources/images/graphics/bridge-tile.svg";
 import chevron from "../../resources/images/icons/learn_more.svg"
 import Button from "../../components/Button/Button";
 
+// hello
 const TextLoop = () => {
     const [mounted, setMounted] = useState(true);
 
