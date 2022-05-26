@@ -24,6 +24,7 @@ const routes = [
     { label: nav.contact, sectionId: "contact" },
 ];
 
+// added this comment which I will remove
 // PDF locations in public folder
 const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
 
