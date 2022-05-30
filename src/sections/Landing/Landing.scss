@@ -1,3 +1,5 @@
+@import "../../constants";
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -37,8 +39,12 @@
   }
 
   h4 {
-    font-size: 16px;
+    font-size: $text-small;
     margin-top: 90px;
+  }
+  
+  .mailingListButton {
+    margin-top: 30px;
   }
 
   @media only screen and (max-width: 600px) {
@@ -47,10 +53,10 @@
       height: 80px;
     }
     h1 {
-      font-size: 25px;
+      font-size: $text-medium;
     }
     h2 {
-      font-size: 20px;
+      font-size: $text-small;
     }
   }
 
@@ -67,10 +73,10 @@
       height: 70px;
     }
     h1 {
-      font-size: 32px;
+      font-size: $text-large;
     }
     h2 {
-      font-size: 22px;
+      font-size: $text-medium;
     }
   }
 
@@ -83,10 +89,10 @@
       height: 100px;
     }
     h1 {
-      font-size: 35px;
+      font-size: $text-large;
     }
     h2 {
-      font-size: 24px;
+      font-size: $text-medium;
     }
   }
 }

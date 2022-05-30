@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-import "./index.scss";
-import { getRemainingTimeUntilMsTimestamp } from "./countdownUtil/index.js";
+import "./Countdown.scss";
+import { getRemainingTimeUntilMsTimestamp } from "./countdownUtil/CountdownUtil.js";
 
 const defaultRemainingTime = {
   days: "",

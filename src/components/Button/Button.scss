@@ -5,13 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $accent-pink;
+    background-color: $grey-purple1;
     color: $text-light;
     font-size: $text-small;
     font-family: "Poppins";
-    font-weight: 700;
+    font-weight: 400;
     border-radius: 10px;
     border-style: none;
+    border: 2px solid $grey-purple1;
     text-decoration: none;
     @include phone {
         font-size: 16px;
@@ -20,7 +21,7 @@
     &:hover,
     &:focus {
         opacity: 0.7;
-        box-shadow: 0 0 11px rgba(255, 96, 120, 0.5);
+        box-shadow: 0 0 11px $grey-purple1;
         transform: translateY(-5px);
         transition: 0.1s linear;
     }
