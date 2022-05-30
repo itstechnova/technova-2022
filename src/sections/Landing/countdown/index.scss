@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    color: white;
+
+}
+
+.counts {
+    display: flex;
+
+}
+
+.count {
+    margin-right: 18px;
+
+}
+
+.box {
+    width: 89px;
+    height: 89px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    margin-top: 19px;
+}
