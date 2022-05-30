@@ -30,7 +30,6 @@ const CountDown = () => {
 
   return (
     <div className="container">
-      <div>T minus</div>
       <div className="counts">
         <div className="count">
           <div className="box">
