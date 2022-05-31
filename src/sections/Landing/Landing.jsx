@@ -1,6 +1,6 @@
 import "./Landing.scss";
 import techNovaText from "../../resources/images/techNovaText.svg";
-import CountDown from "./countdown/Countdown";
+import CountDown from "../../components/Countdown/Countdown";
 import Button from "../../components/Button/Button";
 import landing from "../../resources/strings/landing";
 
