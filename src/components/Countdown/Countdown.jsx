@@ -11,7 +11,7 @@ const defaultRemainingTime = {
 };
 
 // the date in milliseconds
-const date = new Date("08/31/2022 16:00:00"); // some mock date
+const date = new Date("06/13/2022 00:00:00"); // set to application date for now
 const timestampMs = date.getTime();
 
 const CountDown = () => {
