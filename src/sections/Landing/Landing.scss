@@ -1,3 +1,5 @@
+@import "../../constants";
+
 .banner {
   display: flex;
   justify-content: center;
@@ -8,7 +10,6 @@
   background-image: url("../../resources/images/landingBanner.png");
   background-size: cover;
   background-repeat: no-repeat;
-  // hello
 
   .container {
     padding: 0px 30px;
@@ -78,5 +79,12 @@
     h2 {
       font-size: 24px;
     }
+  }
+}
+
+@include phone {
+  .banner {
+    background-image: url("../../resources/images/landingBannerMobile.png");
+    background-size: cover;
   }
 }
