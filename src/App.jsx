@@ -24,6 +24,9 @@ const routes = [
     { label: nav.contact, sectionId: "contact" },
 ];
 
+// 
+const onlyLanding = true;
+
 // PDF locations in public folder
 const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
 
@@ -31,6 +34,13 @@ const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
 //const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
 
 const App = () => {
+    if (onlyLanding) {
+        return (
+            <div className="App">
+                <Landing />
+            </div>
+        )
+    } 
     return (
         <BrowserRouter>
             <Switch>
