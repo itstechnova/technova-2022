@@ -95,3 +95,10 @@
     }
   }
 }
+
+@include phone {
+  .banner {
+    background-image: url("../../resources/images/landingBannerMobile.png");
+    background-size: cover;
+  }
+}
