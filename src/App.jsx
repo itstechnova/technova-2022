@@ -26,7 +26,7 @@ const routes = [
 ];
 
 // landing page only flag
-const onlyLanding = false;
+const onlyLanding = true;
 
 // PDF locations in public folder
 const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
