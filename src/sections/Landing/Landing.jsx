@@ -32,11 +32,21 @@ const Landing = () => {
           <Button link={landing.applyLink} label={landing.applyLabel} type={"button-2"}/>
           <div className="links-container">
             <div className="socials-row">
-                <img className="socials-icon" src={mail} link={socials.email} alt="icon" />
-                <img className="socials-icon" src={ig} link={socials.instagram} alt="icon" />
-                <img className="socials-icon" src={linkedin} link={socials.linkedin} alt="icon" />
-                <img className="socials-icon" src={facebook} link={socials.facebook} alt="icon" />
-                <img className="socials-icon" src={twitter} link={socials.twitter} alt="icon" />
+                <a href={socials.email}>
+                  <img className="socials-icon" src={mail} alt="icon" />
+                </a>
+                <a href={socials.instagram}>
+                  <img className="socials-icon" src={ig} alt="icon" />
+                </a>
+                <a href={socials.linkedin}>
+                  <img className="socials-icon" src={linkedin} alt="icon" />
+                </a>
+                <a href={socials.facebook}>
+                  <img className="socials-icon" src={facebook} alt="icon" />
+                </a>
+                <a href={socials.twitter}>
+                  <img className="socials-icon" src={twitter} alt="icon" />
+                </a>
             </div>
             <a className="link-2021" href={landing.websiteLink2021}>{landing.websiteLabel2021}</a>
           </div>
