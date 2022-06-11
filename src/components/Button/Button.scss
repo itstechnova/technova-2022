@@ -1,6 +1,6 @@
 @import "../../constants";
 
-.button, .button-2 {
+.button {
     padding: 10px 30px;
     display: flex;
     justify-content: center;
@@ -28,8 +28,28 @@
 }
 
 .button-2 {
-    background-color: transparent;
-    color: $accent-pink;
-    border: 2px solid $accent-pink;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #7676E8, #86E9DA);
+    color: $text-dark;
+    font-size: $text-small;
+    font-family: "Poppins";
+    font-weight: 600;
+    border-radius: 10px;
+    border-style: none;
+    text-decoration: none;
+    @include phone {
+        font-size: 16px;
+      }
+    
+    &:hover,
+    &:focus {
+        opacity: 0.7;
+        box-shadow: 0 0 11px $grey-purple1;
+        transform: translateY(-5px);
+        transition: 0.1s linear;
+    }
 }
 
