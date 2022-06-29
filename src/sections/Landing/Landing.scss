@@ -86,17 +86,14 @@
 
   .apply-and-socials-container {
     display: flex;
+    gap: 15px;
     max-height: 70px;
   }
 
   .links-container {
     display: inline-block;
-    align-self: flex-end;
+    align-self: flex-start;
     vertical-align: 2px;
-  }
-
-  .socials-row {
-    margin-left: 30px;
   }
 
   .socials-icon {
@@ -106,10 +103,11 @@
   }
 
   .link-2021 { 
+    margin-top: 12px;
+    margin-left: 10px;
     text-decoration: none; 
     color: #99ACEB;
     font-weight: 100;
-    margin-right: 50px;
   }
   
   @media only screen and (max-width: 600px) {
