@@ -30,7 +30,9 @@ const Landing = () => {
         </div>
         <div className="apply-and-socials-container">
           <Button link={landing.applyLink} label={landing.applyLabel} type={"button-2"}/>
-          <div className="links-container">
+          <Button link={landing.mentorLink} label={landing.mentorLabel} type={"button-2"}/>
+        </div>
+        <div className="links-container">
             <div className="socials-row">
                 <a href={socials.email}>
                   <img className="socials-icon" src={mail} alt="icon" />
@@ -47,10 +49,9 @@ const Landing = () => {
                 <a href={socials.twitter}>
                   <img className="socials-icon" src={twitter} alt="icon" />
                 </a>
+                <a className="link-2021" href={landing.websiteLink2021}>{landing.websiteLabel2021}</a>
             </div>
-            <a className="link-2021" href={landing.websiteLink2021}>{landing.websiteLabel2021}</a>
           </div>
-        </div>
       </div>
     </div>
   );
