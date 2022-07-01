@@ -21,7 +21,7 @@ const Landing = () => {
           <h4 className="presents-text">presents</h4>
         </div>
         <h1 className="hack-text">Hack with Us</h1>
-        <h4 className="description">University of Waterloo's Women in Tech Hackathon</h4>
+        <h4 className="description">University of Waterloo's Women+ in Tech Hackathon</h4>
         <div className="location-container">
           <img className="icon" src={calendar} alt="icon" />
           <h4 className="time-text">August 23-28th</h4>
