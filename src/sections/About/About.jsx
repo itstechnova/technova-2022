@@ -2,10 +2,10 @@ import React from "react";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import "./About.scss";
 import about from "../../resources/strings/about";
-import prepareTile from "../../resources/images/graphics/prepare-tile.svg";
 import hackTile from "../../resources/images/graphics/hack-tile.svg";
-import connectTile from "../../resources/images/graphics/connect-tile.svg";
-import HoverBox from "../../resources/images/hoverBox.svg"
+import HoverBox from "../../resources/images/hoverBox.svg";
+//import prepareTile from "../../resources/images/graphics/prepare-tile.svg";
+//import connectTile from "../../resources/images/graphics/connect-tile.svg";
 
 const About = () => (
   <SectionWrapper id="about">
@@ -19,7 +19,7 @@ const About = () => (
       <div className="about-events">
         <div className="animate">
           <div className="hover_box">
-            <img src={HoverBox} />
+            <img src={HoverBox} alt="" />
           </div>
           <img
             className="prep-image"
@@ -42,7 +42,7 @@ const About = () => (
         </div>
         <div className="animate">
           <div className="hover_box">
-            <img src={HoverBox} />
+            <img src={HoverBox} alt="" />
           </div>
           <img
             className="hack-image"
@@ -56,7 +56,7 @@ const About = () => (
         </div>
         <div className="animate">
           <div className="hover_box">
-            <img src={HoverBox} />
+            <img src={HoverBox} alt="" />
           </div>
           <img
             className="connect-image"
