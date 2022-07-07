@@ -6,6 +6,7 @@ import prepareTile from "../../resources/images/graphics/prepare-tile.svg";
 import hackTile from "../../resources/images/graphics/hack-tile.svg";
 import connectTile from "../../resources/images/graphics/connect-tile.svg";
 import image from "../../resources/images/backgrounds/AboutUs.png";
+import HoverBox from "./box.svg";
 const About = () => (
   <SectionWrapper id="about">
     <div className="about-container">
@@ -17,6 +18,9 @@ const About = () => (
       </div>
       <div className="about-events">
         <div className="animate">
+          <div className="hover_box">
+            <img src={HoverBox} />
+          </div>
           <img
             className="prep-image"
             style={{ gridArea: "prep-image" }}
@@ -37,6 +41,9 @@ const About = () => (
           </div>
         </div>
         <div className="animate">
+          <div className="hover_box">
+            <img src={HoverBox} />
+          </div>
           <img
             className="hack-image"
             style={{ gridArea: "hack-image" }}
@@ -48,6 +55,9 @@ const About = () => (
           </div>
         </div>
         <div className="animate">
+          <div className="hover_box">
+            <img src={HoverBox} />
+          </div>
           <img
             className="connect-image"
             style={{ gridArea: "connect-image" }}
