@@ -8,7 +8,7 @@ import instagram from "../../resources/images/icons/instagram.svg";
 
 const Home = () => {
   return (
-    <SectionWrapper id="home" backgroundImg={Landing}>
+    <SectionWrapper id="home" paddingTop="0">
       <div className="text">
         <div className="h-block">
           <h2>TechNova</h2>
