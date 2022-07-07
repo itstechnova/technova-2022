@@ -23,7 +23,16 @@ const About = () => (
             src={hackTile}
             alt="prepare-tile"
           />
-          <div style={{ gridArea: "prep-caption" }} className="about-caption">
+          <div
+            style={{ gridArea: "prep-caption" }}
+            className="about-caption date"
+          >
+            <p>{about.prepareDates}</p>
+          </div>
+          <div
+            style={{ gridArea: "prep-caption" }}
+            className="about-caption caption"
+          >
             <p>{about.prepareCaption}</p>
           </div>
         </div>
@@ -46,8 +55,14 @@ const About = () => (
             alt="connect-tile"
           />
           <div
+            style={{ gridArea: "prep-caption" }}
+            className="about-caption date"
+          >
+            <p>{about.connectDates}</p>
+          </div>
+          <div
             style={{ gridArea: "connect-caption" }}
-            className="about-caption"
+            className="about-caption caption"
           >
             <p>{about.connectCaption}</p>
           </div>

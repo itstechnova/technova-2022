@@ -76,11 +76,21 @@
   }
 }
 
+.caption {
+  display: none;
+}
+
 .animate {
   transform: translateY(15px);
   transition: transform 0.3s linear;
   &:hover {
     transform: translateY(-15px);
     transition: transform 0.3s linear;
+    .caption {
+      display: block;
+    }
+    .date {
+      display: none;
+    }
   }
 }

@@ -6,8 +6,7 @@ const about = {
     "Technical workshops and community-building events to prepare you for the hackathon and your career in technology! ",
   prepareDates: "Aug 24-27, 2021",
   hackCaption:
-    "A 36-hour virtual hackathon to work with a team to design, create, and build - bringing your project to life!",
-  hackDates: "Aug 27-29, 2021",
+    "A 36-hour virtual hackathon to work with a team of dedicated individuals to design, create, and build - bringing your project idea to life!",
   connectCaption:
     "Tech fair to meet fellow hackers, make friends, and build bridges with industry professionals who want to connect with hackers like you!",
   connectDates: "Aug 24-29, 2022",
