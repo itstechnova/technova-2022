@@ -47,8 +47,8 @@ $light-blue: #C0CBF2;
 $dark-blue: #7D92DB;
 
 @mixin lightmode() {
-    --text-color: #19123c;
-    --background-color: #FFFAF3;
+    --text-color: white;
+    --background-color: black;
     --faq-card-bg-color: #C0CBF2;
     --svg-brightness: 0;
     --header-color: #FFD5CF;
