@@ -50,7 +50,16 @@ const About = () => (
             src={hackTile}
             alt="hack-tile"
           />
-          <div style={{ gridArea: "hack-caption" }} className="about-caption">
+          <div
+            style={{ gridArea: "prep-caption" }}
+            className="about-caption date"
+          >
+            <p>{about.hackDates}</p>
+          </div>
+          <div
+            style={{ gridArea: "hack-caption" }}
+            className="about-caption caption"
+          >
             <p>{about.hackCaption}</p>
           </div>
         </div>
