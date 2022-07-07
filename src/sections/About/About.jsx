@@ -5,8 +5,8 @@ import about from "../../resources/strings/about";
 import prepareTile from "../../resources/images/graphics/prepare-tile.svg";
 import hackTile from "../../resources/images/graphics/hack-tile.svg";
 import connectTile from "../../resources/images/graphics/connect-tile.svg";
+import HoverBox from "../../resources/images/hoverBox.svg"
 
-import HoverBox from "./box.svg";
 const About = () => (
   <SectionWrapper id="about">
     <div className="about-container">
