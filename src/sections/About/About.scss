@@ -78,16 +78,48 @@
 .caption {
   display: none;
   margin-top: 0px;
+  @include tablet {
+    display: block;
+  }
 }
 
 .hover_box {
   display: none;
-  width: 100%;
+  width: 95%;
   height: 100%;
   position: fixed;
   top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
   img {
     width: 100%;
+  }
+  @include tablet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hover_box {
+    top: 30%;
+  }
+}
+
+@media (max-width: 1130px) {
+  .hover_box {
+    top: 27%;
+  }
+}
+
+@media (max-width: 1022px) {
+  .hover_box {
+    top: 23%;
+  }
+}
+
+@media (max-width: 930px) {
+  .hover_box {
+    top: 19%;
   }
 }
 
