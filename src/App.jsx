@@ -24,7 +24,6 @@ const routes = [
     { label: nav.contact, sectionId: "contact" },
 ];
 
-// 
 const onlyLanding = false;
 
 // PDF locations in public folder
