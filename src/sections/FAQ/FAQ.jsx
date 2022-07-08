@@ -1,8 +1,6 @@
 import React from "react";
 import ExpandableCard from "../../components/ExpandableCard/ExpandableCard";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
-import speech from "../../resources/images/graphics/speech.svg";
-
 import "./FAQ.scss";
 
 const FAQ = () => (
