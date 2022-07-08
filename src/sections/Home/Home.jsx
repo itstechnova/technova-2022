@@ -3,7 +3,6 @@ import "./Home.scss";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import Button from "../../components/Button/Button";
 import landing from "../../resources/strings/landing";
-import Landing from "../../resources/images/Landing.png";
 import instagram from "../../resources/images/icons/instagram.svg";
 
 const Home = () => {
