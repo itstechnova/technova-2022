@@ -1,6 +1,7 @@
 import "./App.scss";
 import Landing from "./sections/Landing/Landing";
 import NavBar from "./sections/NavBar/NavBar";
+import Home from "./sections/Home/Home";
 import About from "./sections/About/About";
 import Story from "./sections/Story/Story";
 import SponsorUs from "./sections/Sponsor/SponsorUs";
@@ -24,7 +25,9 @@ const routes = [
     { label: nav.contact, sectionId: "contact" },
 ];
 
+
 const onlyLanding = false;
+
 
 // PDF locations in public folder
 const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
@@ -54,7 +57,7 @@ const App = () => {
                 <Route exact path="/">
                     <div className="App">
                         <NavBar routes={routes} logoRoute={logoRoute} />
-                        <Landing />
+                        <Home />
                         <About />
                         <Story />
                         <SponsorUs />
