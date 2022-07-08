@@ -1,7 +1,15 @@
 @import "../../constants";
 
 .our-sponsors {
+  height: 100%;
   &-container {
+    height: 80%;
+    background-color: #3D3D75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     text-align: left;
     @include phone {
       height: auto;
@@ -13,46 +21,21 @@
         transition: 0.1s linear;
       }
     }
-  }
-
-  &-title {
-    margin-top: 50px;
-    margin-bottom: 24px;
-    @include phone {
-      text-align: left;
+    img {
+      max-width: 200px;
     }
   }
 
   &-logos {
-    padding: 36px;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    a {
-      width: 90%;
-      align-self: center;
-      justify-self: center;
-      text-align: center;
-      img {
-        width: 100%;
-        text-align: center;
-      }
-    }
-    @include phone {
-      padding: 16px;
-    }
+    padding: 50px;
   }
 
   &-gold {
     width: 60%;
-    align-content: center;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    gap: 30px;
     a {
       padding-top: 20px;
-      max-width: 650px;
       text-align: center;
     }
     @include tablet {
@@ -70,10 +53,10 @@
   }
 
   &-silver {
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 60px;
-    display: grid;
-    gap: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
     @include tablet {
       gap: 0px;
     }
@@ -98,13 +81,12 @@
   }
 
   &-bronze {
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 0 80px;
     display: flex;
-    gap: 24px;
+    gap: 30px;
     justify-content: center;
-    align-items: center;
-    a {
+    img {
       max-width: 150px;
     }
     @include tablet {
@@ -130,8 +112,7 @@
   }
 
   &-startup {
-    margin-top: 60px;
-    width: 18%;
+    margin-top: 20px;
     display: flex;
     gap: 36px;
     justify-content: center;
