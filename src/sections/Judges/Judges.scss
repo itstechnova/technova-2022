@@ -1,33 +1,53 @@
 @import "../../constants";
 
+#judges {
+    position: relative;
+}
+
 .judge-photos {
-    display: grid;
+    display: flex;
+    // overflow: hidden;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
     margin-top: 48px;
-    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    align-items: flex-start;
-    @include tablet {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    @include phone {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @include small-phone {
-        grid-template-columns: repeat(1, 1fr);
-    }
+    // align-items: flex-start;
+}
+
+.judge-photos::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.left {
+    cursor: pointer;
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    width: 40px;
+    height: 40px;
+    border: 5px solid;
+    border-color: white transparent transparent white;
+    transform: rotate(-45deg);
+}
+
+.right {
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    top: 65%;
+    width: 40px;
+    height: 40px;
+    border: 5px solid;
+    border-color: white transparent transparent white;
+    transform: rotate(135deg);
 }
 
 .judge-img {
+    border-radius: 50%;
     align-self: flex-start;
     width: 170px;
     height: 170px;
     
-        -moz-box-shadow: 5px 5px 0 var(--image-shadow-color);
-        -webkit-box-shadow: 5px 5px 0 var(--image-shadow-color);
-        box-shadow: 5px 5px 0 var(--image-shadow-color);
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
     
     @include tablet {
         width: 150px;
