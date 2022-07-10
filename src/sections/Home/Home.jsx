@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         <h1>Hack with Us</h1>
         <p>University of Waterloo's Women+ in Tech Hackathon</p>
-        <p>August 24-29, 2022 • Virtual Event </p>
+        <p>August 23-28, 2022 • Virtual Event </p>
         <div className="links">
           <Button
             link={landing.applyLink}
