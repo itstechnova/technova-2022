@@ -103,11 +103,4 @@
       margin-bottom: 2rem;
     }
   }
-
-  &-showcase {
-    margin: 50px 0;
-    @include phone {
-      margin: 0px;
-    }
-  }
 }

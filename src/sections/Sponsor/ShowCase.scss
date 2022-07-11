@@ -1,0 +1,38 @@
+@import "../../constants";
+
+.showcase-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    margin-left: 100px;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      height: 5px;
+      margin-block: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #FFFAF3;
+      border-radius: 4px;
+      margin-right: 50px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      width: 5px;
+      background-color: #7676E8;
+    }
+
+    // TODO: add supports fro firefox
+
+    @include phone {
+      margin: 0px;
+    }
+  }
+  
+.showcase-card {
+    min-width: 500px;
+    // height: 100px;
+}
+  
