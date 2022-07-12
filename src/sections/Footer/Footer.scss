@@ -10,7 +10,7 @@
         }
     }
     &-container {
-        height: 118px;
+        height: 60px;
         background-color: $light-pink;
         display: flex;
         flex-direction: column;
@@ -28,17 +28,7 @@
             font-size: 14px;
         }
         @include phone {
-            height: 114px;
-        }
-    }
-    &-logo-container {
-        height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-            height: 100%;
-            margin-right: 10px;
+            height: 55px;
         }
     }
 }

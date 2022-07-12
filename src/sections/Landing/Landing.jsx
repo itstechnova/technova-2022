@@ -1,87 +1,60 @@
-import React, { useState, useEffect } from "react";
-import Typist from 'react-typist';
 import "./Landing.scss";
-import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
-import landing from "../../resources/strings/landing";
-import bridgeTile from "../../resources/images/graphics/bridge-tile.svg";
-import chevron from "../../resources/images/icons/learn_more.svg"
 import Button from "../../components/Button/Button";
 
-const TextLoop = () => {
-    const [mounted, setMounted] = useState(true);
-
-    useEffect(() => {
-        setMounted(true);
-    }, [mounted]);
-
-    return (
-        <div>
-            {mounted ? (
-                <Typist className="landing-slogan" onTypingDone={() => setMounted(false)}>
-                    <span><span className="landing-slogan-bold">{landing.prepare}</span>{landing.sloganEnd}</span>
-                    <Typist.Backspace count={20} delay={800} />
-                    <span><span className="landing-slogan-bold">{landing.hack}</span>{landing.sloganEnd}</span>
-                    <Typist.Backspace count={17} delay={800} />
-                    <span><span className="landing-slogan-bold">{landing.connect}</span>{landing.sloganEnd}</span>
-                    <Typist.Backspace count={20} delay={800} />
-                </Typist>
-            ) : (
-                <span className="landing-slogan">
-                    {"n"}
-                </span>
-            )}
-        </div>
-    );
-
-}
+import techNovaText from "../../resources/images/techNovaText2.svg";
+import calendar from "../../resources/images/icons/calendar.svg";
+import location from "../../resources/images/icons/location.svg";
+import landing from "../../resources/strings/landing";
+import mail from "../../resources/images/socials/mailFill.svg";
+import ig from "../../resources/images/socials/igFill.svg";
+import linkedin from "../../resources/images/socials/linkedinFill.svg";
+import facebook from "../../resources/images/socials/facebookFill.svg";
+import twitter from "../../resources/images/socials/twitterFill.svg";
+import socials from "../../resources/strings/socials";
 
 const Landing = () => {
-    return (
-        <SectionWrapper id="landing" paddingTop="0">
-            <div className="landing-container">
-                <div className="landing-text">
-                    <h4 className="landing-logo-text">
-                        <span className="landing-title">{landing.title1}</span>
-                        {landing.title2}
-                    </h4>
-                    <h4 className="landing-logo-text-mobile" style={{alignItems: "flex-end", justifyContent: "center", gap: "5px"}} >
-                        <img 
-                            className="mlh-mobile"
-                            style={{height: "18px", marginRight: "2px", marginBottom: "4px"}} 
-                            alt="mlh logo"
-                        />
-                        • <span className="landing-title" style={{marginBottom: "1px"}}>{landing.title1}</span>
-                        {landing.title2}
-                    </h4>
-                    <TextLoop />
-                    <h4 className="landing-description-mobile">
-                        {landing.description}
-                    </h4>
-                    <h4 className="landing-dates">{landing.dates}</h4>
-                    <h4 className="landing-description">
-                        {landing.description}
-                    </h4>
-
-                    </div>
-                <div className="landing-button-container">
-                    <Button link={landing.devpostLink} label={landing.viewDevpost} />
-                </div>
-                <div className="landing-button-container-mobile">
-                    <Button link={landing.devpostLink} label={landing.viewDevpost} />
-                </div>
-
-                <div className="landing-graphic-container">
-                    <img src={bridgeTile} alt="bridge tile" />
-                </div>
-
-                <div className="landing-learn-more-container">
-                    <a href="#about" className="learn-more-link">Learn more
-                    <img src={chevron} className="learn-more-arrow" alt="learn more" />
-                    </a>
-                </div>
+  return (
+    <div className="banner">
+      <div className="container">
+        <div className="technova-container">
+          <img className="technova-text" src={techNovaText} alt="TechNova" />
+          <h4 className="presents-text">presents</h4>
+        </div>
+        <h1 className="hack-text">Hack with Us</h1>
+        <h4 className="description">University of Waterloo's Women+ in Tech Hackathon</h4>
+        <div className="location-container">
+          <img className="icon" src={calendar} alt="icon" />
+          <h4 className="time-text">August 23-28th</h4>
+          <img className="icon" src={location} alt="icon" />
+          <h4>Hybrid @ Waterloo ON</h4>
+        </div>
+        <div className="apply-and-socials-container">
+          <Button link={landing.applyLink} label={landing.applyLabel} type={"button-2"}/>
+          <Button link={landing.mentorLink} label={landing.mentorLabel} type={"button-2"}/>
+        </div>
+        <div className="links-container">
+            <div className="socials-row">
+                <a href={socials.email}>
+                  <img className="socials-icon" src={mail} alt="icon" />
+                </a>
+                <a href={socials.instagram}>
+                  <img className="socials-icon" src={ig} alt="icon" />
+                </a>
+                <a href={socials.linkedin}>
+                  <img className="socials-icon" src={linkedin} alt="icon" />
+                </a>
+                <a href={socials.facebook}>
+                  <img className="socials-icon" src={facebook} alt="icon" />
+                </a>
+                <a href={socials.twitter}>
+                  <img className="socials-icon" src={twitter} alt="icon" />
+                </a>
+                <a className="link-2021" href={landing.websiteLink2021}>{landing.websiteLabel2021}</a>
             </div>
-        </SectionWrapper>
-    );
+          </div>
+      </div>
+    </div>
+  );
 };
 
 export default Landing;

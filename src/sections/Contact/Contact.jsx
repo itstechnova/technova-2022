@@ -2,16 +2,15 @@ import React from "react";
 import { useState, useEffect } from 'react';
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import SocialMediaLink from "../../components/SocialMediaLink/SocialMediaLink";
-import Team from "../../sections/Team/Team";
 
 import "./Contact.scss";
-import arrow from "../../resources/images/icons/submit.svg";
-import contactImage from "../../resources/images/contact.svg";
-import mail from "../../resources/images/socials/mailFill.svg";
-import ig from "../../resources/images/socials/igFill.svg";
-import linkedin from "../../resources/images/socials/linkedinFill.svg";
-import facebook from "../../resources/images/socials/facebookFill.svg";
-import twitter from "../../resources/images/socials/twitterFill.svg";
+import arrow from "../../resources/images/icons/email.svg";
+import contactImage from "../../resources/images/contact1.svg";
+import mail from "../../resources/images/socials/mailDark.svg";
+import ig from "../../resources/images/socials/igDark.svg";
+import linkedin from "../../resources/images/socials/linkedinDark.svg";
+import facebook from "../../resources/images/socials/facebookDark.svg";
+import twitter from "../../resources/images/socials/twitterDark.svg";
 import contact from "../../resources/strings/contact";
 import socials from "../../resources/strings/socials";
 
@@ -49,7 +48,7 @@ function Contact() {
     };
 
     async function submitEmail() {
-        console.log("here");
+        //console.log("here");
         const isValidEmail = state.email && validateEmailAddress(state.email);
 
         if (!isValidEmail) {
@@ -73,25 +72,39 @@ function Contact() {
         setTimeout(() => { setState({ ...state, email: "", success: false }) }, 5000)
     }
 
-    console.log(state);
+    //console.log(state);
 
     const contactInfo = () => {
         return (
             <div className="contact">
                 <h1 className="sub-title">{contact.title}</h1>
-                <div className="email-wrapper">
-                {state.screenWidth >= 400 ? 
-                <input className="email-input" placeholder="Enter your email to stay connected" value={state.email} onChange={e => setState({ ...state, email: e.target.value })} />
-                : <input className="email-input" placeholder="Enter your email address" value={state.email} onChange={e => setState({ ...state, email: e.target.value })} />}
-                    <div className="submit-wrapper" onClick={e => submitEmail()}>
-                        <div className="wrapper">
-                            <img src={arrow} className="submit-btn" alt="email submit" />
+                <div className="email-card">
+                    <p className="email-text">
+                        Reach out to us at&nbsp;
+                        <a className="email-link" href="hello@itstechnova.org">hello@itstechnova.org</a>
+                    </p>
+                    <div className="email-wrapper">
+                        {state.screenWidth >= 400 ? 
+                        <input className="email-input" placeholder="name@example.com" value={state.email} onChange={e => setState({ ...state, email: e.target.value })} />
+                        : <input className="email-input" placeholder="name@example.com" value={state.email} onChange={e => setState({ ...state, email: e.target.value })} />}
+                        <div className="submit-wrapper" onClick={e => submitEmail()}>
+                            <div className="wrapper">
+                                <img src={arrow} className="submit-btn" alt="email submit" />
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 {state.success && <p> Thanks for signing up, we'll keep you updated!</p>}
                 {state.error && <p> Please enter a valid email.</p>}
+
+                <div className="links-row">
+                    <a href="https://github.com/itstechnova" >Open Source</a>
+                    <a href="https://mlh.io/privacy" >Privacy Policy</a>
+                    <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" >Code of Conduct</a>
+                    <a href="https://cs.uwaterloo.ca/wics" >WiCS</a>
+                </div>
+
                 <div className="socials-row">
                     <SocialMediaLink src={mail} link={socials.email} />
                     <SocialMediaLink src={ig} link={socials.instagram} />
@@ -100,12 +113,18 @@ function Contact() {
                     <SocialMediaLink src={twitter} link={socials.twitter} />
                 </div>
 
-                {/* <div className="links-row">
-                    <a className="contact-links" href={contact.href1}>{contact.link1}</a>
-                    <a className="contact-links" href={contact.href2}>{contact.link2}</a>
-                    <a className="contact-links" href={contact.href3}>{contact.link3}</a>
-                    <a className="contact-links" href={contact.href4}>{contact.link4}</a>
-                </div> */}
+                <div>
+                    <h3 className="inclusivity-title">Inclusivity Statement</h3>
+                    <p className="inclusivity-text">
+                        TechNova’s mission is to create safe, inclusive and empowering spaces for women and 
+                        non-binary individuals to start, grow and thrive in the technology industry. We ensure 
+                        that all members of the hackathon are respectful of our participants' gender expression. 
+                        The TechNova team would also like to acknowledge that “female” or “women” is not an 
+                        accurate description for many people and it may make some feel unwelcome. We use the 
+                        term Women+ to specifically and intentionally include cis and trans women, as well as 
+                        non-binary, agender, or intersex people, and other gender minorities.
+                    </p>
+                </div>
 
             </div>
         )
@@ -121,7 +140,6 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <Team />
         </SectionWrapper>
     );
 

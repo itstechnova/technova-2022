@@ -14,9 +14,9 @@ html {
 body {
     overflow-x: hidden;
     // handle ALL dark mode things here
-    @include lightmode();
-    &.dark-mode {
-        @include darkmode();
+    @include darkmode();
+    &.light-mode {
+        @include lightmode();
     }
     background-color: var(--background-color);
     color: var(--text-color);

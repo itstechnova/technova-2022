@@ -1,13 +1,15 @@
 import "./App.scss";
 import Landing from "./sections/Landing/Landing";
 import NavBar from "./sections/NavBar/NavBar";
+import Home from "./sections/Home/Home";
 import About from "./sections/About/About";
-import Story from "./sections/Story/Story";
+//import Story from "./sections/Story/Story";
 import SponsorUs from "./sections/Sponsor/SponsorUs";
 import FAQ from "./sections/FAQ/FAQ";
 import Contact from "./sections/Contact/Contact";
-import Keynote from "./sections/Keynote/Keynote";
-import Judges from "./sections/Judges/Judges";
+import Team from "./sections/Team/Team";
+//import Keynote from "./sections/Keynote/Keynote";
+//import Judges from "./sections/Judges/Judges";
 import Footer from "./sections/Footer/Footer";
 import Partners from "./sections/Partner/OurPartners";
 import logo from "./resources/images/logo/logo.png";
@@ -17,15 +19,14 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 const logoRoute = { logoSrc: logo, sectionId: "landing" };
 const routes = [
-  { label: nav.about, sectionId: "about" },
-  { label: nav.sponsor, sectionId: "sponsor" },
-  { label: nav.keynote, sectionId: "keynote" },
-  { label: nav.judges, sectionId: "judges" },
-  { label: nav.faq, sectionId: "faq" },
-  { label: nav.contact, sectionId: "contact" },
+    { label: nav.about, sectionId: "about" },
+    { label: nav.sponsor, sectionId: "sponsor" },
+    //{ label: nav.keynote, sectionId: "keynote" },
+    //{ label: nav.judges, sectionId: "judges" },
+    { label: nav.faq, sectionId: "faq" },
+    { label: nav.contact, sectionId: "contact" },
 ];
 
-//
 const onlyLanding = false;
 
 // PDF locations in public folder
