@@ -12,7 +12,6 @@ import Team from "./sections/Team/Team";
 //import Keynote from "./sections/Keynote/Keynote";
 //import Judges from "./sections/Judges/Judges";
 import Footer from "./sections/Footer/Footer";
-import Partners from "./sections/Partner/OurPartners";
 import logo from "./resources/images/logo/logo.png";
 
 import nav from "./resources/strings/nav";
@@ -37,44 +36,44 @@ const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
 //const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
 
 const App = () => {
-  if (onlyLanding) {
+    if (onlyLanding) {
+        return (
+            <div className="App">
+                <Landing />
+            </div>
+        )
+    } 
     return (
-      <div className="App">
-        <Landing />
-      </div>
+        <BrowserRouter>
+        <Switch>
+            <Route
+            // Redirect itstechnova.org/sponsorship-package to pdf location
+            path="/sponsorship-package"
+            component={() => {
+                window.location.href = SponsorPackage;
+                return null;
+            }}
+            />
+            <Route exact path="/">
+            <div className="App">
+                <NavBar routes={routes} logoRoute={logoRoute} />
+                    <Home />
+                    <About />
+                    <Testimonials />
+                    <Partners />
+                    {/*<Story />*/}
+                    <SponsorUs />
+                    {/*<Keynote />
+                    <Judges />*/}
+                    <FAQ />
+                    <Team />
+                    <Contact />
+                    <Footer />
+            </div>
+            </Route>
+        </Switch>
+        </BrowserRouter>
     );
-  }
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route
-          // Redirect itstechnova.org/sponsorship-package to pdf location
-          path="/sponsorship-package"
-          component={() => {
-            window.location.href = SponsorPackage;
-            return null;
-          }}
-        />
-        <Route exact path="/">
-          <div className="App">
-            <NavBar routes={routes} logoRoute={logoRoute} />
-                <Home />
-                <About />
-                <Testimonials />
-                <Partners />
-                {/*<Story />*/}
-                <SponsorUs />
-                {/*<Keynote />
-                <Judges />*/}
-                <FAQ />
-                <Team />
-                <Contact />
-                <Footer />
-          </div>
-        </Route>
-      </Switch>
-    </BrowserRouter>
-  );
 };
 
 export default App;
