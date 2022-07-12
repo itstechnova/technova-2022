@@ -4,8 +4,8 @@ import "./About.scss";
 import about from "../../resources/strings/about";
 import hackTile from "../../resources/images/graphics/hack-tile.svg";
 import HoverBox from "../../resources/images/hoverBox.svg";
-//import prepareTile from "../../resources/images/graphics/prepare-tile.svg";
-//import connectTile from "../../resources/images/graphics/connect-tile.svg";
+import prepareTile from "../../resources/images/graphics/prepare-tile.svg";
+import connectTile from "../../resources/images/graphics/connect-tile.svg";
 
 const About = () => (
   <SectionWrapper id="about">
@@ -24,7 +24,7 @@ const About = () => (
           <img
             className="prep-image"
             style={{ gridArea: "prep-image" }}
-            src={hackTile}
+            src={prepareTile}
             alt="prepare-tile"
           />
           <div
@@ -70,7 +70,7 @@ const About = () => (
           <img
             className="connect-image"
             style={{ gridArea: "connect-image" }}
-            src={hackTile}
+            src={connectTile}
             alt="connect-tile"
           />
           <div

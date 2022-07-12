@@ -3,6 +3,7 @@ import Landing from "./sections/Landing/Landing";
 import NavBar from "./sections/NavBar/NavBar";
 import Home from "./sections/Home/Home";
 import About from "./sections/About/About";
+import Testimonials from "./sections/Testimonials/Testimonials"
 //import Story from "./sections/Story/Story";
 import SponsorUs from "./sections/Sponsor/SponsorUs";
 import FAQ from "./sections/FAQ/FAQ";
@@ -59,6 +60,8 @@ const App = () => {
             <NavBar routes={routes} logoRoute={logoRoute} />
                 <Home />
                 <About />
+                <Testimonials />
+                <Partners />
                 {/*<Story />*/}
                 <SponsorUs />
                 {/*<Keynote />
