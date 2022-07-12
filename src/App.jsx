@@ -58,10 +58,11 @@ const App = () => {
             <NavBar routes={routes} logoRoute={logoRoute} />
 
             <Landing />
-            <Partners />
+
             <About />
             <Story />
             <SponsorUs />
+            <Partners />
             <Keynote />
             <Judges />
             <FAQ />
