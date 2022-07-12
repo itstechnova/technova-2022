@@ -2,7 +2,7 @@ import React from "react";
 import "./OurPartners.scss";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import wics from "../../resources/images/logo/wics.png";
-import Button from "../../resources/images/WiCSButton.svg";
+//import Button from "../../resources/images/WiCSButton.svg";
 
 const OurPartners = () => (
   <SectionWrapper id="partner">
