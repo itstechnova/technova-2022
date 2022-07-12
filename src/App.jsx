@@ -57,18 +57,16 @@ const App = () => {
         <Route exact path="/">
           <div className="App">
             <NavBar routes={routes} logoRoute={logoRoute} />
-
-            <Landing />
-
-            <About />
-            <Story />
-            <SponsorUs />
-            <Partners />
-            <Keynote />
-            <Judges />
-            <FAQ />
-            <Contact />
-            <Footer />
+                <Home />
+                <About />
+                {/*<Story />*/}
+                <SponsorUs />
+                {/*<Keynote />
+                <Judges />*/}
+                <FAQ />
+                <Team />
+                <Contact />
+                <Footer />
           </div>
         </Route>
       </Switch>
