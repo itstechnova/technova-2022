@@ -3,7 +3,8 @@ import Landing from "./sections/Landing/Landing";
 import NavBar from "./sections/NavBar/NavBar";
 import Home from "./sections/Home/Home";
 import About from "./sections/About/About";
-import Testimonials from "./sections/Testimonials/Testimonials"
+import Testimonials from "./sections/Testimonials/Testimonials";
+import Partners from "./sections/Partner/OurPartners";
 //import Story from "./sections/Story/Story";
 import SponsorUs from "./sections/Sponsor/SponsorUs";
 import FAQ from "./sections/FAQ/FAQ";
@@ -45,32 +46,33 @@ const App = () => {
     } 
     return (
         <BrowserRouter>
-            <Switch>
-                <Route
-                    // Redirect itstechnova.org/sponsorship-package to pdf location
-                    path="/sponsorship-package"
-                    component={() => {
-                        window.location.href = SponsorPackage;
-                        return null;
-                    }}
-                />
-                <Route exact path="/">
-                    <div className="App">
-                        <NavBar routes={routes} logoRoute={logoRoute} />
-                        <Home />
-                        <About />
-                        <Testimonials />
-                        {/*<Story />*/}
-                        <SponsorUs />
-                        {/*<Keynote />
-                        <Judges />*/}
-                        <FAQ />
-                        <Team />
-                        <Contact />
-                        <Footer />
-                    </div>
-                </Route>
-            </Switch>
+        <Switch>
+            <Route
+            // Redirect itstechnova.org/sponsorship-package to pdf location
+            path="/sponsorship-package"
+            component={() => {
+                window.location.href = SponsorPackage;
+                return null;
+            }}
+            />
+            <Route exact path="/">
+            <div className="App">
+                <NavBar routes={routes} logoRoute={logoRoute} />
+                    <Home />
+                    <About />
+                    <Testimonials />
+                    <Partners />
+                    {/*<Story />*/}
+                    <SponsorUs />
+                    {/*<Keynote />
+                    <Judges />*/}
+                    <FAQ />
+                    <Team />
+                    <Contact />
+                    <Footer />
+            </div>
+            </Route>
+        </Switch>
         </BrowserRouter>
     );
 };

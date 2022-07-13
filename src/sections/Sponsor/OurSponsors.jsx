@@ -21,9 +21,9 @@ import stickermule from "../../resources/images/sponsors/stickermule.png";
 
 /*
 import splunk from "../../resources/images/sponsors/bronze/splunk.png";
-*/
 import wie from "../../resources/images/logo/wie.png";
 import wics from "../../resources/images/logo/wics.png";
+*/
 
 const OurSponsors = () => (
     <div className="our-sponsors-container">
@@ -96,15 +96,6 @@ const OurSponsors = () => (
                     <img src={ratiocity} alt="Ratio.city" style={{ width: "80%" }} />
                 </a>
             </div>
-        </div>
-        <h2 className="our-sponsors-title">Our Partners</h2>
-        <div className="our-sponsors-partners">
-            <a href="https://cs.uwaterloo.ca/wics">
-                <img src={wics} alt="WiCS" />
-            </a>
-            <a href="https://uwaterloo.ca/women-in-engineering/">
-                <img src={wie} alt="WiE" />
-            </a>
         </div>
         <div className="our-sponsors-special">
             <h3>❤️ With special thanks to  </h3>
