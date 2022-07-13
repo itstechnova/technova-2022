@@ -10,9 +10,7 @@ const OurPartners = () => (
       <h2 className="our-partners-title">In Partnership With</h2>
 
       <div className="our-partners">
-        <a href="https://cs.uwaterloo.ca/wics">
-          <img src={wics} alt="WiCS" />
-        </a>
+        <img src={wics} alt="WiCS" />
         <p className="our-partners-text">
           We are working in partnership with the University of Waterloo’s David
           R. Cheriton School of Computer Science - Women in Computer Science
@@ -21,10 +19,9 @@ const OurPartners = () => (
           in computing for the past 14 years, currently playing an active role
           in supporting over 2700 students.
         </p>
-        <div className="button">
+        <a className="button" href="https://cs.uwaterloo.ca/wics">
           <p>Find out more about WiCS</p>
-         
-        </div>
+        </a>
       </div>
     </div>
   </SectionWrapper>
