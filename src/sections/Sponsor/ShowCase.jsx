@@ -1,8 +1,6 @@
-import Button from "../../components/Button/Button";
 
 import amazon from "../../resources/images/sponsors_2021/amazon.png";
 import cockroach from "../../resources/images/sponsors_2021/cockroach.png";
-import sps from "../../resources/images/sponsors_2021/sps.png";
 import pagerduty from "../../resources/images/sponsors_2021/pagerduty.png";
 import arrow from "../../resources/images/WiCSButton.svg";
 
@@ -36,12 +34,12 @@ const ShowCase = () => {
         return (
           <div className="showcase-card">
             <div className="showcase-content">
-              <img className="showcase-img" src={sponsor.image} />
+              <img className="showcase-img" alt="sponsor" src={sponsor.image} />
               <p className="showcase-quote">{sponsor.quote}</p>
               <a className="showcase-button" href={sponsor.link}>
                 <div className="showcase-button-content">
                   <p>Explore career page</p>
-                  <img src={arrow}></img>
+                  <img alt="arrow" src={arrow}></img>
                 </div>
               </a>
             </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import Button from "../../components/Button/Button";
-import { Carousel, CarouselTypes } from "../../components/Carousel/Carousel";
 
 import telescope from "../../resources/images/graphics/telescope.svg";
 
