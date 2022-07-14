@@ -18,7 +18,8 @@ const FAQ = () => (
           <ExpandableCard
             question={"Is this event only for Waterloo Students?"}
           >
-            
+            No! Our event is open to all women and nonbinary people in high 
+            school or post-secondary.
           </ExpandableCard>
           <ExpandableCard question={"How many people can form a team?"}>
             Teams can consist of up to 4 hackers. You can apply with or without
