@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./NavBar.scss";
-import ModeToggle from "../../components/ModeToggle/ModeToggle";
+//import ModeToggle from "../../components/ModeToggle/ModeToggle";
 import cross from "../../resources/images/icons/cross.svg";
 import hamburger from "../../resources/images/icons/hamburger.svg";
 
@@ -43,7 +43,7 @@ const NavBar = ({ routes, logoRoute }) => {
                         </div>
                     </div>
                     <div className="mobile">
-                        <ModeToggle className="toggle" />
+                        {/*<ModeToggle className="toggle" />*/}
                         <div className="mobile-menu" onClick={() => setShowNav(!showNav)}>
                             {showNav ? (
                                 <img className="nav-x" src={cross} alt="cross" />
@@ -53,9 +53,9 @@ const NavBar = ({ routes, logoRoute }) => {
                         </div>
                     </div>
                 </div>
-                <a className="mlh-banner" href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" rel="noreferrer" target="_blank">
+                {/*<a className="mlh-banner" href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" rel="noreferrer" target="_blank">
                     <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" alt="Major League Hacking 20" />
-                </a>
+                </a>*/}
 
                 {showNav && <div className="nav-mobile-links">
                     {routes.map((route) => (
