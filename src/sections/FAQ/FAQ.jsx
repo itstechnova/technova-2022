@@ -18,10 +18,7 @@ const FAQ = () => (
           <ExpandableCard
             question={"Is this event only for Waterloo Students?"}
           >
-            Women+ are underrepresented in this field, and although there’s been
-            progress, there is still a long way to go! Thus we want to create a
-            safe and welcoming space for our hackers to grow and create unique
-            projects.
+            
           </ExpandableCard>
           <ExpandableCard question={"How many people can form a team?"}>
             Teams can consist of up to 4 hackers. You can apply with or without
@@ -44,10 +41,10 @@ const FAQ = () => (
           </ExpandableCard>
 
           <ExpandableCard question={"Why is this event women+ only?"}>
-            No worries! Our event, Prepare with Us, will get you up to speed, so
-            you're ready to hack during the weekend! We will also have mentors
-            available to help guide you through your projects during the Hack
-            with Us event.
+            Women+ are underrepresented in this field, and although there’s been
+            progress, there is still a long way to go! Thus we want to create a
+            safe and welcoming space for our hackers to grow and create unique
+            projects.
           </ExpandableCard>
 
           <ExpandableCard question={"Is there a cost to attend?"}>
