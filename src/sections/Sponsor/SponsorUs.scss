@@ -29,6 +29,7 @@
 
 .sponsor-us {
   &-container {
+    padding-bottom: 80px;
     text-align: left;
     @include phone {
       height: auto;

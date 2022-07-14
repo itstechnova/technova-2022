@@ -2,6 +2,7 @@
 
 .our-sponsors {
   height: 100%;
+  
   &-container {
     height: 80%;
     background-color: #3D3D75;
@@ -11,9 +12,11 @@
     justify-content: center;
     width: 100%;
     text-align: left;
+    
     @include phone {
       height: auto;
     }
+    
     a {
       &:hover {
         opacity: 0.5;
@@ -21,28 +24,41 @@
         transition: 0.1s linear;
       }
     }
-    img {
-      max-width: 200px;
+    
+    p {
+      font-size: $text-xsmall;
     }
   }
 
   &-logos {
-    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
 
   &-gold {
     width: 60%;
     display: flex;
+    justify-content: center;
+    padding-left: 150px; // temp 
     gap: 30px;
+    
     a {
       padding-top: 20px;
       text-align: center;
     }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 150px;
+    }
+
     @include tablet {
       a {
         max-width: 450px;
       }
     }
+    
     @include phone {
       width: 100%;
       a {
@@ -57,25 +73,27 @@
     display: flex;
     justify-content: center;
     gap: 50px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100px;
+    }
+    
     @include tablet {
       gap: 0px;
     }
+    
     @include phone {
       grid-template-columns: repeat(2, 1fr);
       margin-top: 40px;
       justify-content: space-around;
       gap: 8px;
+      
       a {
         img {
           max-width: 100%;
         }
-      }
-      .pagerduty {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        width: 50%;
-        align-items: center;
-        justify-self: center;
       }
     }
   }
@@ -86,27 +104,31 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+    
     img {
-      max-width: 150px;
+      object-fit: cover;
+      width: 100%;
+      height: 100px;
     }
+    
     @include tablet {
       a {
         min-width: 80px;
       }
     }
+    
     @include phone {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin-top: 40px;
       gap: 8px;
+      
       a {
         width: 100%;
+        
         img {
           height: 100%;
         }
-      }
-      .d2l {
-        grid-column-start: 2;
       }
     }
   }
@@ -117,37 +139,36 @@
     gap: 36px;
     justify-content: center;
     align-items: center;
+    
     a {
       min-width: 60px;
     }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 75px;
+    }
+    
     @include tablet {
       width: 25%;
       a {
         min-width: 50px;
       }
     }
+    
     @include phone {
       width: 38%;
       margin-top: 20px;
       gap: 16px;
+      
       a {
         min-width: 0;
         width: 100%;
+        
         img {
           height: 100%;
         }
-      }
-    }
-  }
-
-  &-special {
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
-    @include tablet {
-      flex-direction: column;
-      img {
-        padding: 24px;
       }
     }
   }
