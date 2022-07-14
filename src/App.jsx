@@ -5,7 +5,6 @@ import Home from "./sections/Home/Home";
 import About from "./sections/About/About";
 import Testimonials from "./sections/Testimonials/Testimonials";
 import Partners from "./sections/Partner/OurPartners";
-//import Story from "./sections/Story/Story";
 import SponsorUs from "./sections/Sponsor/SponsorUs";
 import FAQ from "./sections/FAQ/FAQ";
 import Contact from "./sections/Contact/Contact";
@@ -34,9 +33,6 @@ const onlyLanding = false;
 // PDF locations in public folder
 const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
 
-// PDF locations in public folder
-//const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
-
 const App = () => {
     if (onlyLanding) {
         return (
@@ -63,7 +59,6 @@ const App = () => {
                     <About />
                     <Testimonials />
                     <Partners />
-                    {/*<Story />*/}
                     <SponsorUs />
                     {/*<Keynote />
                     <Judges />*/}
