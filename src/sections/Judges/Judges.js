@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import "./Judges.scss";
 import judge1 from "../../resources/images/judges/judge1.svg";
@@ -11,19 +11,21 @@ import judge7 from "../../resources/images/judges/judge7.svg";
 import judge8 from "../../resources/images/judges/judge8.svg";
 import judgeG from "../../resources/images/judges/judgeG.svg";
 
-const JudgeCard = (props) => {
-  const { photo, showDetail } = props;
-
+const JudgeCard = ({ photo }) => {
   return (
     <div className="judge-wrapper">
-      <img alt="" src={photo.pic} className="judge-img" />
-      {showDetail ? (
-        <div>
-          <h5 className="judge-name">{photo.name}</h5>
-          <p className="judge-role">{photo.role}</p>
-          <p className="judge-org">{photo.org}</p>
+      <div>
+        <div className="judge-img-big-wrapper">
+          <div className="judge-img-small-wrapper">
+            <img alt="" src={photo.pic} className="judge-img" />
+          </div>
         </div>
-      ) : null}
+
+        <div className="judge-detail">
+          <span className="bot" />
+          {photo.name} | {photo.role}, {photo.org}
+        </div>
+      </div>
     </div>
   );
 };
@@ -98,18 +100,16 @@ const judgeList = [
 ];
 
 const Judges = () => {
-  const [photoIdx, setPhotoIdx] = useState(3);
+  // const [photoIdx, setPhotoIdx] = useState(3);
 
   const leftScroll = () => {
     const scroll = document.querySelector(".judge-photos");
     scroll.scrollBy(-200, 0);
-    setPhotoIdx(Math.max(0, photoIdx - 1));
   };
 
   const rightScroll = () => {
     const scroll = document.querySelector(".judge-photos");
     scroll.scrollBy(200, 0);
-    setPhotoIdx(Math.min(judgeList.length - 1, photoIdx + 1));
   };
 
   return (
@@ -119,11 +119,7 @@ const Judges = () => {
       <div className="judge-photos">
         <div className="left" onClick={leftScroll} />
         {judgeList.map((info, index) => {
-          let showDetail = false;
-          if (index == photoIdx) {
-            showDetail = true;
-          }
-          return <JudgeCard photo={info} id={index} showDetail={showDetail} />;
+          return <JudgeCard photo={info} />;
         })}
         <div class="right" onClick={rightScroll} />
       </div>
