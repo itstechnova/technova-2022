@@ -99,7 +99,7 @@ function Contact() {
                 {state.error && <p> Please enter a valid email.</p>}
 
                 <div className="links-row">
-                    <a href="https://github.com/itstechnova" >Open Source</a>
+                    {/*<a href="https://github.com/itstechnova" >Open Source</a>*/}
                     <a href="https://mlh.io/privacy" >Privacy Policy</a>
                     <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" >Code of Conduct</a>
                     <a href="https://cs.uwaterloo.ca/wics" >WiCS</a>
