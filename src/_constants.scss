@@ -15,12 +15,12 @@ $text-xxlarge: 72px;
 $text-logo: 36px;
 
 @mixin fontface($name, $file, $weight: normal, $style: normal) {
-    @font-face {
-        font-weight: $weight;
-        font-family: "#{$name}";
-        font-style: $style;
-        src: url("./resources/fonts/#{$file}.ttf") format("truetype");
-    }
+  @font-face {
+    font-weight: $weight;
+    font-family: "#{$name}";
+    font-style: $style;
+    src: url("./resources/fonts/#{$file}.ttf") format("truetype");
+  }
 }
 
 @include fontface("Lexend", "Lexend/Lexend-Medium");
@@ -36,7 +36,7 @@ $grey-purple2: #9494DF;
 
 $accent-pink: #FF6078;
 $accent-pink-focus: #c95566;
-$light-pink: #FFE4E1;
+$light-pink: #ffe4e1;
 $accent-purple: #7676e8;
 $accent-purple-focus: #6363d3;
 $background-light: #fffdfa;
@@ -46,38 +46,37 @@ $text-muted: #c4c4c4;
 $text-dark: #19123c;
 $grey: #c4c4c4;
 $light-grey: #e5e9f2;
-$light-blue: #C0CBF2;
-$dark-blue: #7D92DB;
+$light-blue: #c0cbf2;
+$dark-blue: #7d92db;
 
 @mixin lightmode() {
-    --text-color: #19123c;
-    --background-color: #FFFAF3;
-    --faq-card-bg-color: #C0CBF2;
-    --svg-brightness: 0;
-    --header-color: #FFD5CF;
-    --footer-color: #FFD5CF;
-    --x-icon: url("./resources/images/icons/cross.svg");
-    --hamburger-icon: url("./resources/images/icons/hamburger.svg");
-    --sponsor-logos: transparent;
-    --nav-shadow-color: #FFD5CF;
-    --image-shadow-color: #FF6078;
-    --mlh-logo: url("https://static.mlh.io/brand-assets/logo/official/mlh-logo-black.svg");
+  --text-color: #19123c;
+  --background-color: #fffaf3;
+  --faq-card-bg-color: #c0cbf2;
+  --svg-brightness: 0;
+  --header-color: #ffd5cf;
+  --footer-color: #ffd5cf;
+  --x-icon: url("./resources/images/icons/cross.svg");
+  --hamburger-icon: url("./resources/images/icons/hamburger.svg");
+  --sponsor-logos: transparent;
+  --nav-shadow-color: #ffd5cf;
+  --image-shadow-color: #ff6078;
+  --mlh-logo: url("https://static.mlh.io/brand-assets/logo/official/mlh-logo-black.svg");
 }
 
 @mixin darkmode() {
-    --text-color: #fffdfa;
-    --background-color: #19123c;
-    --faq-card-bg-color: #3D3D75;
-    --svg-brightness: 100;
-    --header-color: #3D3D75;
-    --footer-color: #3D3D75;
-    --x-icon: url("./resources/images/icons/cross-light.svg");
-    --hamburger-icon: url("./resources/images/icons/hamburger-light.svg");
-    --sponsor-logos: #C0CBF2;
-    --nav-shadow-color: #19123c;
-    --image-shadow-color: #FFA69E;
-    --mlh-logo: url("https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.svg");
-
+  --text-color: #fffdfa;
+  --background-color: #19123c;
+  --faq-card-bg-color: #3d3d75;
+  --svg-brightness: 100;
+  --header-color: #474163;
+  --footer-color: #474163;
+  --x-icon: url("./resources/images/icons/cross-light.svg");
+  --hamburger-icon: url("./resources/images/icons/hamburger-light.svg");
+  --sponsor-logos: #c0cbf2;
+  --nav-shadow-color: #19123c;
+  --image-shadow-color: #ffa69e;
+  --mlh-logo: url("https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.svg");
 }
 
 // Breakpoints
@@ -89,22 +88,22 @@ $width-mld-max: 1250px;
 $width-lg-max: 1435px;
 
 @mixin small-phone {
-    @media (max-width: #{$width-xsm-max}) {
-        @content;
-    }
+  @media (max-width: #{$width-xsm-max}) {
+    @content;
+  }
 }
 @mixin phone {
-    @media (max-width: #{$width-sm-max}) {
-        @content;
-    }
+  @media (max-width: #{$width-sm-max}) {
+    @content;
+  }
 }
 @mixin tablet {
-    @media (max-width: #{$width-md-max}) {
-        @content;
-    }
+  @media (max-width: #{$width-md-max}) {
+    @content;
+  }
 }
 @mixin desktop {
-    @media (max-width: #{$width-mld-max}) {
-        @content;
-    }
+  @media (max-width: #{$width-mld-max}) {
+    @content;
+  }
 }

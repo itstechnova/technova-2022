@@ -1,5 +1,5 @@
 const socials = {
-        email: "mailto:hacktechnova@gmail.com",
+        email: "mailto:hello@itstechnova.org",
         mailingList: "https://docs.google.com/forms/d/e/1FAIpQLSdUCqXqrW53nkw3xM5MDDjreqfnCNYGuIMcZZe_EvKZItrgiw/viewform",
         linkedin: "https://www.linkedin.com/company/itstechnova",
         facebook: "https://www.facebook.com/itstechnova/",
