@@ -3,7 +3,6 @@ import "./Home.scss";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import Button from "../../components/Button/Button";
 import landing from "../../resources/strings/landing";
-import instagram from "../../resources/images/icons/instagram.svg";
 
 const Home = () => {
   return (
@@ -22,13 +21,11 @@ const Home = () => {
             label={landing.applyLabel}
             type={"button-2"}
           />
-          <a
-            href="https://www.instagram.com/itstechnova/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={instagram} alt="instagram"></img>
-          </a>
+          <Button
+            link={landing.mentorLink}
+            label={landing.mentorLabel}
+            type={"button-2"}
+          />
         </div>
       </div>
     </SectionWrapper>
