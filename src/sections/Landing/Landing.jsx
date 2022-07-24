@@ -34,23 +34,23 @@ const Landing = () => {
         </div>
         <div className="links-container">
             <div className="socials-row">
-                <a href={socials.email}>
+                <a href={socials.email} target="_blank">
                   <img className="socials-icon" src={mail} alt="icon" />
                 </a>
-                <a href={socials.instagram}>
+                <a href={socials.instagram} target="_blank">
                   <img className="socials-icon" src={ig} alt="icon" />
                 </a>
-                <a href={socials.linkedin}>
+                <a href={socials.linkedin} target="_blank">
                   <img className="socials-icon" src={linkedin} alt="icon" />
                 </a>
-                <a href={socials.facebook}>
+                <a href={socials.facebook} target="_blank">
                   <img className="socials-icon" src={facebook} alt="icon" />
                 </a>
-                <a href={socials.twitter}>
+                <a href={socials.twitter} target="_blank">
                   <img className="socials-icon" src={twitter} alt="icon" />
                 </a>
-                <a className="link-2021" href={landing.websiteLink2021}>{landing.websiteLabel2021}</a>
-            </div>
+                <a className="link-2021" href={landing.websiteLink2021} target="_blank">{landing.websiteLabel2021} </a>
+            </div> 
           </div>
       </div>
     </div>
