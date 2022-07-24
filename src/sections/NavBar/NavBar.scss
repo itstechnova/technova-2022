@@ -12,7 +12,6 @@
   }
 
   &-content {
-    margin-left: 100px;
     height: 100%;
     width: $width-lg-max;
     display: flex;
@@ -28,6 +27,7 @@
   }
   
   &-links-container {
+    padding: 0 100px;
     display: flex;
   }
 
