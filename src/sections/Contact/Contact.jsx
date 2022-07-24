@@ -118,6 +118,7 @@ function Contact() {
         {state.error && <p> Please enter a valid email.</p>}
 
         <div className="links-row">
+
           <a href="https://mlh.io/privacy" target="_blank" rel="noreferrer">
             Privacy Policy
           </a>
