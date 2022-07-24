@@ -1,7 +1,6 @@
 @import "../../constants";
 
 .our-partners {
-  
   &-title {
     margin-top: 50px;
     margin-bottom: 24px;
@@ -13,6 +12,24 @@
   &-text {
     margin: 0px 400px 0px 3%;
     padding-bottom: 20px;
+
+    @media (max-width: 1235px) {
+      margin: 0px 317px 0px 3%;
+    }
+    @media (max-width: 1146px) {
+      margin: 0px 317px 0px 3%;
+    }
+
+    @include tablet {
+      background-color: white;
+      margin-top: -5px !important;
+      padding: 0% 5% 5% 5%;
+      margin: 0px;
+      p {
+        color: black;
+      }
+      border-radius: 0px 0px 10px 10px;
+    }
   }
 
   & {
@@ -21,21 +38,49 @@
     background-size: 100% 100%;
     color: #19123c;
     text-align: left;
-    img {
+    .wics_logo {
+      width: 300px;
       margin-left: 20%;
+      padding-bottom: 20px;
+    }
+    .mobile_img {
+      display: none;
     }
 
-    .button {
-      border-radius: 40px;
-      border: 1px solid #7676e8;
-      background-color: transparent;
-      color: black;
-      display: inline-block;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      margin-bottom: 20px;
-      margin-left: 20%;
+    @include tablet {
+      background-image: none;
+      .mobile_img {
+        display: block;
+      }
+      .wics_logo {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        margin-left: 0%;
+      }
+    }
+
+    .wics_button {
+      display: flex;
+      justify-content: center;
+      .button {
+        background: linear-gradient(112.61deg, #7676e8 4.42%, #fc6d83 100%);
+        border-radius: 40px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: black;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 20px;
+        cursor: pointer;
+
+        p {
+          color: white;
+        }
+      }
     }
   }
 }
