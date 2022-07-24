@@ -123,6 +123,12 @@
   }
 }
 
+@media (min-width: 229px) {
+  .hover_box {
+    top: 0%;
+  }
+}
+
 .animate {
   transform: translateY(20px);
   transition: transform 0.3s linear;
@@ -137,6 +143,30 @@
     }
     .date {
       display: none;
+    }
+  }
+  @include phone {
+    transform: none;
+    &:hover {
+      transform: none;
+      .date {
+        display: block;
+      }
+      .hover_box {
+        display: none;
+      }
+    }
+  }
+  @include tablet {
+    transform: none;
+    &:hover {
+      transform: none;
+      .date {
+        display: block;
+      }
+      .hover_box {
+        display: none;
+      }
     }
   }
 }
