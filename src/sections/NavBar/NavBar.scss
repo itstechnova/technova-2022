@@ -18,17 +18,17 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    @include tablet {
-      margin: 0 30px;
-    }
     @include phone {
       justify-content: space-between;
     }
   }
-  
+
   &-links-container {
-    padding: 0 100px;
     display: flex;
+    margin: 0 100px;
+    @include tablet {
+      margin: 0 30px;
+    }
   }
 
   &-links {
@@ -74,7 +74,6 @@
       padding: 20px;
       width: 100%;
       box-sizing: border-box;
-      
     }
   }
 }
@@ -129,4 +128,10 @@
     display: flex;
     align-items: center;
   }
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
