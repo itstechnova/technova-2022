@@ -35,7 +35,7 @@ const OurSponsors = () => (
         <div className="our-sponsors-gold">
           {gold.map(sponsor => {
             return (
-              <a href={sponsor.link} target="_blank">
+              <a href={sponsor.link} target="_blank" rel="noreferrer">
                 <img src={sponsor.logo} alt={sponsor.alt} />
               </a>
             )
@@ -44,7 +44,7 @@ const OurSponsors = () => (
         <div className="our-sponsors-silver">
           {silver.map(sponsor => {
             return (
-              <a href={sponsor.link} target="_blank">
+              <a href={sponsor.link} target="_blank" rel="noreferrer">
                 <img src={sponsor.logo} alt={sponsor.alt} />
               </a>
             )
@@ -53,7 +53,7 @@ const OurSponsors = () => (
         <div className="our-sponsors-bronze">
           {bronze.map(sponsor => {
             return (
-              <a href={sponsor.link} target="_blank">
+              <a href={sponsor.link} target="_blank" rel="noreferrer">
                 <img src={sponsor.logo} alt={sponsor.alt} />
               </a>
             )
@@ -62,7 +62,7 @@ const OurSponsors = () => (
         <div className="our-sponsors-startup">
           {startup.map(sponsor => {
             return (
-              <a href={sponsor.link} target="_blank">
+              <a href={sponsor.link} target="_blank" rel="noreferrer">
                 <img src={sponsor.logo} alt={sponsor.alt} />
               </a>
             )

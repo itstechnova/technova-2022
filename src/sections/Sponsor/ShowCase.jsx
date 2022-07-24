@@ -36,7 +36,7 @@ const ShowCase = () => {
             <div className="showcase-content">
               <img className="showcase-img" alt="sponsor" src={sponsor.image} />
               <p className="showcase-quote">{sponsor.quote}</p>
-              <a className="showcase-button" href={sponsor.link} target="_blank">
+              <a className="showcase-button" href={sponsor.link} target="_blank" rel="noreferrer">
                 <div className="showcase-button-content">
                   <p>Explore career page</p>
                   <img alt="arrow" src={arrow}></img>
