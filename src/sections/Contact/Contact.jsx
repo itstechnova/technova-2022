@@ -57,7 +57,7 @@ function Contact() {
             return;
         }
 
-        const url = `https://docs.google.com/forms/u/0/d/e/1FAIpQLSdUCqXqrW53nkw3xM5MDDjreqfnCNYGuIMcZZe_EvKZItrgiw/formResponse`
+        const url = `https://docs.google.com/forms/d/e/1FAIpQLScc_gM2db8zyRKfFqtJDjwHzH40vG6cY_99fFpQyX50DQ_hew/viewform`
 
         await fetch(url, {
             "method": "POST",
@@ -99,7 +99,6 @@ function Contact() {
                 {state.error && <p> Please enter a valid email.</p>}
 
                 <div className="links-row">
-                    <a href="https://github.com/itstechnova" >Open Source</a>
                     <a href="https://mlh.io/privacy" >Privacy Policy</a>
                     <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" >Code of Conduct</a>
                     <a href="https://cs.uwaterloo.ca/wics" >WiCS</a>

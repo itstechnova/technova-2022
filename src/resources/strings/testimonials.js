@@ -1,7 +1,7 @@
 const about = {
     title: "Testimonials",
     description:
-      "Hackathons can be intimidating for those when you are new to the space, and especially if you are a minority. So there needs to be a way to balance the playing field and offer the opportunity, community and support for women and to thrive in tech.",
+      "Hackathons can be intimidating for those when you are new to the space, and especially if you are a minority. So there needs to be a way to balance the playing field and offer the opportunity, community and support for women and non-binary individuals to thrive in tech.",
     vanessaTestimonial:
       "You're not going to find a more energetic, supportive community than the one created by TechNova! Competition aside, there were tons of fun events and activities to partake in, I would 100% participate in TechNova again and recommend it to my friends!",
     emmaTestimonial:

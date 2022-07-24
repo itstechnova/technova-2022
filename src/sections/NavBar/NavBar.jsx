@@ -72,7 +72,7 @@ const NavBar = ({ routes, logoRoute }) => {
                             {route.label}
                         </Link>
                     ))}
-                    <div style={{ display: "flex", justifyContent: "center", width: "100%", marginTop: "20px"}}>
+                    {/*<div style={{ display: "flex", justifyContent: "center", width: "100%", marginTop: "20px"}}>
                         <a
                             href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white"
                             rel="noreferrer" target="_blank"
@@ -81,7 +81,7 @@ const NavBar = ({ routes, logoRoute }) => {
                             <img className="mlh-mobile" src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-black.svg" style={{ height: "18px", marginRight: "2px", marginBottom: "4px" }} alt="mlh logo" />
                             official member
                         </a>
-                    </div>
+                    </div>*/}
                 </div>
                 }
             </div>

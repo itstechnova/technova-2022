@@ -4,7 +4,7 @@ import "./Footer.scss";
 const Footer = () => (
     <React.Fragment>
         <div className="footer-container">
-            <p className="title">Created by Technova 2022</p>
+            <p className="title">Made with 💖 by Techova 2022</p>
         </div>
     </React.Fragment>
 );
