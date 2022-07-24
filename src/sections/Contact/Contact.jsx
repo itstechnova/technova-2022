@@ -101,7 +101,7 @@ function Contact() {
                 <div className="links-row">
                     <a href="https://mlh.io/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>
                     <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer">Code of Conduct</a>
-                    <a href="https://cs.uwaterloo.ca/wics" target="_blank">WiCS</a>
+                    <a href="https://cs.uwaterloo.ca/wics" target="_blank" rel="noreferrer">WiCS</a>
                 </div>
 
                 <div className="socials-row">
