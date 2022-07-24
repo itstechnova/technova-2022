@@ -22,7 +22,7 @@ const SponsorUs = () => (
               </p>
               <p>
                 Interested in sponsoring? Email us at{" "}
-                <a href="mailto:sponsors@itstechnova.org">
+                <a href="mailto:sponsors@itstechnova.org" target="_blank" rel="noreferrer">
                   sponsors@itstechnova.org
                 </a>
               </p>
