@@ -4,7 +4,7 @@ import "./SocialMediaLink.scss";
 const SocialMediaLink = ({ src, link }) => {
     return (
         <div className="social-link-container">
-            <a href={link}>
+            <a href={link} target="_blank">
                 <img className="social-icon" src={src} alt="" />
             </a>
         </div>

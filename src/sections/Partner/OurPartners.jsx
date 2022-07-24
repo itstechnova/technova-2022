@@ -19,7 +19,7 @@ const OurPartners = () => (
           in computing for the past 14 years, currently playing an active role
           in supporting over 2700 students.
         </p>
-        <a className="button" href="https://cs.uwaterloo.ca/wics">
+        <a className="button" href="https://cs.uwaterloo.ca/wics" target="_blank">
           <p>Find out more about WiCS</p>
         </a>
       </div>

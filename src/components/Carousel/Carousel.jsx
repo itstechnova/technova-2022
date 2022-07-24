@@ -105,7 +105,7 @@ export const Carousel = ({ content, type }) => {
                 <p>{content[currentSlide].quote}</p>
                 <br />
                 <div className="carousel-link-wrapper">
-                    <a href={content[currentSlide].link}>Explore Career Page {'>'}</a>
+                    <a href={content[currentSlide].link} target="_blank">Explore Career Page {'>'}</a>
                 </div>
             </div>
         </div>
