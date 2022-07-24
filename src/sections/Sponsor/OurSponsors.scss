@@ -1,18 +1,9 @@
 @import "../../constants";
 
 .our-sponsors {
-  height: 100%;
   
   &-container {
-    height: 80%;
-    background-color: #3D3D75;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     text-align: left;
-    
     @include phone {
       height: auto;
     }
@@ -24,6 +15,14 @@
         transition: 0.1s linear;
       }
     }
+
+    &-title {
+      margin-top: 50px;
+      margin-bottom: 24px;
+      @include phone {
+        text-align: left;
+      }
+    }
     
     p {
       font-size: $text-xsmall;
@@ -31,26 +30,41 @@
   }
 
   &-logos {
+    padding: 36px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      width: 90%;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      img {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @include phone {
+      padding: 16px;
+    }
+
     padding-top: 20px;
     padding-bottom: 60px;
   }
 
   &-gold {
     width: 60%;
-    display: flex;
-    justify-content: center;
-    padding-left: 150px; // temp 
-    gap: 30px;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     
     a {
       padding-top: 20px;
+      max-width: 650px;
       text-align: center;
-    }
-
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 150px;
     }
 
     @include tablet {
@@ -69,16 +83,10 @@
   }
 
   &-silver {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100px;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+    display: grid;
+    gap: 20px;
     
     @include tablet {
       gap: 0px;
@@ -99,16 +107,14 @@
   }
 
   &-bronze {
-    margin-top: 20px;
+    margin-top: 60px;
     padding: 0 80px;
     display: flex;
-    gap: 30px;
+    gap: 24px;
     justify-content: center;
-    
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100px;
+    align-items: center;
+    a {
+      max-width: 150px;
     }
     
     @include tablet {
@@ -134,7 +140,8 @@
   }
 
   &-startup {
-    margin-top: 20px;
+    margin-top: 60px;
+    width: 18%;
     display: flex;
     gap: 36px;
     justify-content: center;
@@ -142,12 +149,6 @@
     
     a {
       min-width: 60px;
-    }
-
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 75px;
     }
     
     @include tablet {

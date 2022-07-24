@@ -27,10 +27,9 @@ const startup = [
 const OurSponsors = () => (
   <div>
     <div className="our-sponsors-container">
-      <h2 className="our-sponsors-title" style={{ marginTop: "50px", padding: "20px"}}>
-        Thank You to Our Sponsors
+      <h2 className="our-sponsors-title">
+      Our Sponsors
       </h2>
-      <p>TechNova is made possible because of our sponsors.</p>
       <div className="our-sponsors-logos">
         <div className="our-sponsors-gold">
           {gold.map(sponsor => {
