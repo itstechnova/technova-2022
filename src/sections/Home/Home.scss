@@ -53,6 +53,10 @@
 .home-img {
     display: flex;
     align-items: flex-end;
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .text {
@@ -63,6 +67,16 @@
 
     h1 {
         margin-bottom: 25px;
+    }
+
+    @include tablet {
+        span {
+            display: flex;
+        }
+
+        .dot {
+            display: none;
+        }
     }
 }
 
@@ -85,6 +99,10 @@
 
     a:nth-child(2) {
         margin-left: 30px;
+    }
+
+    @include tablet {
+        text: 5px;  
     }
 }
 

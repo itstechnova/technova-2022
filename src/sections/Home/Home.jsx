@@ -18,8 +18,15 @@ const Home = () => {
             <p>presents</p>
           </div>
           <h1>Hack with Us</h1>
-          <p>University of Waterloo's Women+ in Tech Hackathon</p>
-          <p>August 23-28, 2022 • Virtual Event </p>
+          <p>
+            <span>University of Waterloo's</span>
+            <span>Women+ in Tech Hackathon</span>
+          </p>
+          <p>
+            <span>August 23-28, 2022</span>
+            <span className="dot"> • </span>
+            <span>Virtual Event </span>
+          </p>
           <div className="links">
             <Button
               link={landing.applyLink}
