@@ -3,33 +3,33 @@ import { useState } from "react";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import "./Testimonials.scss";
 import testimonials from "../../resources/strings/testimonials";
-import vanessaImg from "../../resources/images/testimonials/vanessa-testimonial.png"
-import vanessaSelectedImg from "../../resources/images/testimonials/vanessa-testimonial-selected.png"
-import emmaImg from "../../resources/images/testimonials/emma-testimonial.png"
-import emmaSelectedImg from "../../resources/images/testimonials/emma-testimonial-selected.png"
-import aanchalImg from "../../resources/images/testimonials/aanchal-testimonial.png"
-import aanchalSelectedImg from "../../resources/images/testimonials/aanchal-testimonial-selected.png"
+import vanessaImg from "../../resources/images/testimonials/vanessa-testimonial.png";
+import vanessaSelectedImg from "../../resources/images/testimonials/vanessa-testimonial-selected.png";
+import emmaImg from "../../resources/images/testimonials/emma-testimonial.png";
+import emmaSelectedImg from "../../resources/images/testimonials/emma-testimonial-selected.png";
+import aanchalImg from "../../resources/images/testimonials/aanchal-testimonial.png";
+import aanchalSelectedImg from "../../resources/images/testimonials/aanchal-testimonial-selected.png";
 
 const testimonialsList = [
   {
     name: "Vanessa",
     testimonial: testimonials.vanessaTestimonial,
     notSelected: vanessaImg,
-    selected: vanessaSelectedImg
+    selected: vanessaSelectedImg,
   },
   {
     name: "Emma",
     testimonial: testimonials.emmaTestimonial,
     notSelected: emmaImg,
-    selected: emmaSelectedImg
+    selected: emmaSelectedImg,
   },
   {
     name: "Aanchal",
     testimonial: testimonials.aanchalTestimonial,
     notSelected: aanchalImg,
-    selected: aanchalSelectedImg
-  }
-]
+    selected: aanchalSelectedImg,
+  },
+];
 
 const Testimonials = () => {
   const [index, setIndex] = useState(1);
@@ -42,13 +42,58 @@ const Testimonials = () => {
             <h1>{testimonials.title}</h1>
             <p>{testimonials.description}</p>
           </div>
-          <div className="testimonials-wrapper">
-            <img src={index === 0 ? testimonialsList[0].selected : testimonialsList[0].notSelected} alt="" onClick={() => setIndex(0)} />
-            <img src={index === 1 ? testimonialsList[1].selected : testimonialsList[1].notSelected} alt="" onClick={() => setIndex(1)} />
-            <img src={index === 2 ? testimonialsList[2].selected : testimonialsList[2].notSelected} alt="" onClick={() => setIndex(2)} />
+          <div className="testimonials-wrapper-desktop">
+            <img
+              src={
+                index === 0
+                  ? testimonialsList[0].selected
+                  : testimonialsList[0].notSelected
+              }
+              alt=""
+              onMouseOver={() => setIndex(0)}
+            />
+            <img
+              src={
+                index === 1
+                  ? testimonialsList[1].selected
+                  : testimonialsList[1].notSelected
+              }
+              alt=""
+              onMouseOver={() => setIndex(1)}
+            />
+            <img
+              src={
+                index === 2
+                  ? testimonialsList[2].selected
+                  : testimonialsList[2].notSelected
+              }
+              alt=""
+              onMouseOver={() => setIndex(2)}
+            />
           </div>
-          <div className="testimonials-text">
+          <div className="testimonials-text-desktop">
             <p>{testimonialsList[index].testimonial}</p>
+          </div>
+
+          <div className="testimonials-wrapper-tablet">
+            <div>
+              <img src={testimonialsList[0].selected} alt="" />
+              <div className="testimonials-text-tablet">
+                <p>{testimonialsList[0].testimonial}</p>
+              </div>
+            </div>
+            <div>
+              <img src={testimonialsList[1].selected} alt="" />
+              <div className="testimonials-text-tablet">
+                <p>{testimonialsList[0].testimonial}</p>
+              </div>
+            </div>
+            <div>
+              <img src={testimonialsList[2].selected} alt="" />
+              <div className="testimonials-text-tablet">
+                <p>{testimonialsList[0].testimonial}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -57,3 +102,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+/* */
