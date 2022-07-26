@@ -8,6 +8,7 @@ import uplift from "../../resources/images/sponsors/uplift.png";
 import google from "../../resources/images/sponsors/google.png";
 import microsoft from "../../resources/images/sponsors/microsoft.png";
 import meta from "../../resources/images/sponsors/meta.png";
+import sps from "../../resources/images/sponsors/sps.png";
 
 const gold = [
   {
@@ -19,6 +20,11 @@ const gold = [
     logo: microsoft,
     alt: "Microsoft",
     link: "https://careers.microsoft.com/us/en",
+  },
+  {
+    logo: sps,
+    alt: "sps",
+    link: "https://jobs.spscommerce.com/",
   },
 ];
 
