@@ -59,8 +59,18 @@
     grid-template-columns: repeat(1, 1fr);
     width: 60%;
 
+    // cockroachdb
+    a:nth-child(1) img {
+      width: 80%;
+    }
+
+    // cockroachdb
+    a:nth-child(3) img {
+      width: 80%;
+    }
+
     a {
-      max-width: 500px;
+      max-width: 550px;
     }
     
 
@@ -84,6 +94,11 @@
     margin-top: 60px;
     display: flex;
     gap: 30px;
+
+    // google
+    a:nth-child(2) img {
+      width: 80%;
+    }
 
     a {
       max-width: 350px;
