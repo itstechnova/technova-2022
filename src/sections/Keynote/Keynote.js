@@ -1,30 +1,31 @@
 import React from "react";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
-import keynoteImg from "../../resources/images/keynote.svg";
+import ufo from "../../resources/images/ufo.png";
+import keynote from "../../resources/images/keynote.png";
 import "./keynote.scss"
 
 const Keynote = () => (
-    <SectionWrapper id="keynote">
-        <h1 className="keynote-title">
-            Keynote Speaker
-        </h1>
-        <div className="keynote-wrapper">
-            <div>
-            <img src={keynoteImg} alt="" className="keynote-image"/>
-            </div>
-            
-            <p className="keynote-text">
-                <h5 className="keynote-name">Roanne Sones</h5>
-                <h5 className="keynote-name">Corporate Vice President</h5>
-                Roanne is responsible for program management for engineering systems, operating systems, 
-                and edge products that span cloud-to-edge and edge-to-cloud including media services and 
-                hardware. Her team delivers the core OS platform from RTOS, to Linux, to Android, to Windows
-                 and across Microsoft devices and services including Azure, Windows, Windows Server, Xbox, 
-                 and Embedded/Internet of Things.
-            </p>
+  <SectionWrapper id="keynote">
+    <h1 className="keynote-title">Keynote Speaker</h1>
+    <div className="keynote-wrapper">
+      <div className="images">
+        <img src={ufo} alt="" className="ufo" />
+        <img src={keynote} alt="" className="keynote-image" />
+      </div>
+
+      <p className="keynote-text">
+        <div className="keynote-name-title">
+          <h3 className="keynote-name">Ayla Orucevic</h3>
+          <h8 className="keynote-name">CEO of Tesla</h8>
         </div>
-        
-    </SectionWrapper>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo, ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo hello.
+      </p>
+    </div>
+  </SectionWrapper>
 );
 
 export default Keynote;
