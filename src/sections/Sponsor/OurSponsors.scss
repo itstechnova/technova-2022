@@ -1,18 +1,8 @@
 @import "../../constants";
 
 .our-sponsors {
-  height: 100%;
-  
   &-container {
-    height: 80%;
-    background-color: #3D3D75;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     text-align: left;
-    
     @include phone {
       height: auto;
     }
@@ -30,28 +20,59 @@
     }
   }
 
+  &-title {
+    padding: 20px 0;
+    @include phone {
+      text-align: left;
+    }
+  }
+
   &-logos {
+    padding: 36px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      width: 90%;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      img {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @include phone {
+      padding: 16px;
+    }
+
     padding-top: 20px;
     padding-bottom: 60px;
   }
 
   &-gold {
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     width: 60%;
-    display: flex;
-    justify-content: center;
-    padding-left: 150px; // temp 
-    gap: 30px;
-    
-    a {
-      padding-top: 20px;
-      text-align: center;
+
+    // cockroachdb
+    a:nth-child(1) img {
+      width: 80%;
     }
 
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 150px;
+    // SPS
+    a:nth-child(3) img {
+      width: 80%;
     }
+
+    a {
+      max-width: 550px;
+    }
+    
 
     @include tablet {
       a {
@@ -69,15 +90,18 @@
   }
 
   &-silver {
-    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    gap: 30px;
 
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100px;
+    // google
+    a:nth-child(2) img {
+      width: 80%;
+    }
+
+    a {
+      max-width: 350px;
     }
     
     @include tablet {
@@ -99,16 +123,18 @@
   }
 
   &-bronze {
-    margin-top: 20px;
+    // Change to 3 if we get more bronze sponsors
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
     padding: 0 80px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
-    
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100px;
+    align-items: center;
+
+    a {
+      max-width: 250px;
     }
     
     @include tablet {
@@ -119,7 +145,9 @@
     
     @include phone {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      // Change to 3 if we get more bronze sponsors
+      //grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       margin-top: 40px;
       gap: 8px;
       
@@ -134,7 +162,8 @@
   }
 
   &-startup {
-    margin-top: 20px;
+    margin-top: 60px;
+    width: 18%;
     display: flex;
     gap: 36px;
     justify-content: center;
@@ -142,12 +171,7 @@
     
     a {
       min-width: 60px;
-    }
-
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 75px;
+      max-width: 150px;
     }
     
     @include tablet {
