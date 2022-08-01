@@ -13,6 +13,10 @@ import otto from "../../resources/images/sponsors/otto.png";
 import cloudflare from "../../resources/images/sponsors/cloudflare.jpg";
 import d2l from "../../resources/images/sponsors/d2l.png";
 
+import wie from "../../resources/images/logo/wie.png";
+import wics from "../../resources/images/logo/wics.png";
+import velocity from "../../resources/images/logo/velocity.png"
+
 const gold = [
   {
     logo: cockroach,
@@ -80,6 +84,12 @@ const startup = [
   },
 ];
 
+const partners = [
+  { logo: wics, alt: "wics", link: "https://cs.uwaterloo.ca/wics" },
+  { logo: wie, alt: "wie", link: "https://uwaterloo.ca/women-in-engineering/" },
+  { logo: velocity, alt: "velocity", link: "https://velocityincubator.com/" },
+];
+
 const OurSponsors = () => (
   <div className="our-sponsors-container">
     <h2 className="our-sponsors-title">Our Sponsors</h2>
@@ -120,6 +130,16 @@ const OurSponsors = () => (
           );
         })}
       </div>
+    </div>
+    <h2 className="our-sponsors-title">Our Partners</h2>
+    <div className="our-sponsors-partners">
+      {partners.map((partner) => {
+        return (
+          <a href={partner.link}>
+            <img src={partner.logo} alt={partner.alt} />
+          </a>
+        );
+      })}
     </div>
   </div>
 );
