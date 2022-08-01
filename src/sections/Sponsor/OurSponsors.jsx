@@ -9,6 +9,9 @@ import google from "../../resources/images/sponsors/google.png";
 import microsoft from "../../resources/images/sponsors/microsoft.png";
 import meta from "../../resources/images/sponsors/meta.png";
 import sps from "../../resources/images/sponsors/sps.png";
+import otto from "../../resources/images/sponsors/otto.png";
+import cloudflare from "../../resources/images/sponsors/cloudflare.jpg";
+import d2l from "../../resources/images/sponsors/d2l.png";
 
 const gold = [
   {
@@ -34,7 +37,11 @@ const silver = [
     alt: "Scotiabank",
     link: "https://www.scotiabank.com/ca/en/about.html",
   },
-  { logo: google, alt: "Google", link: "https://careers.google.com/students/" },
+  { 
+    logo: google, 
+    alt: "Google", 
+    link: "https://careers.google.com/students/" 
+  },
 ];
 
 const bronze = [
@@ -43,11 +50,34 @@ const bronze = [
     alt: "Toyota",
     link: "https://tmmc.ca/en/toyota-canada-careers/",
   },
-  { logo: meta, alt: "Meta", link: "https://www.metacareers.com/" },
+  { 
+    logo: meta, 
+    alt: "Meta", 
+    link: "https://www.metacareers.com/" 
+  },
+  { 
+    logo: otto, 
+    alt: "Clearpath", 
+    link: "" 
+  },
+  {
+    logo: cloudflare,
+    alt: "Cloudflare",
+    link: "https://www.cloudflare.com/careers/"
+  },
+  {
+    logo: d2l,
+    alt: "D2L",
+    link: "https://www.d2l.com/careers/early-talent/"
+  },
 ];
 
 const startup = [
-  { logo: uplift, alt: "Uplift", link: "https://uplift.com/careers" },
+  { 
+    logo: uplift, 
+    alt: "Uplift", 
+    link: "https://uplift.com/careers" 
+  },
 ];
 
 const OurSponsors = () => (

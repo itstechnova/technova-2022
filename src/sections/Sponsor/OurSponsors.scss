@@ -3,6 +3,8 @@
 .our-sponsors {
   &-container {
     text-align: left;
+    padding-top: 20px;
+
     @include phone {
       height: auto;
     }
@@ -58,15 +60,10 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 60%;
+    padding-top: 40px;
 
-    // cockroachdb
-    a:nth-child(1) img {
-      width: 80%;
-    }
-
-    // SPS
-    a:nth-child(3) img {
-      width: 80%;
+    a:nth-child(2) img {
+      width: 110%;
     }
 
     a {
@@ -123,9 +120,7 @@
   }
 
   &-bronze {
-    // Change to 3 if we get more bronze sponsors
-    //grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 60px;
     padding: 0 80px;
     display: flex;
@@ -134,7 +129,7 @@
     align-items: center;
 
     a {
-      max-width: 250px;
+      //max-width: 250px;
     }
     
     @include tablet {
@@ -145,9 +140,7 @@
     
     @include phone {
       display: grid;
-      // Change to 3 if we get more bronze sponsors
-      //grid-template-columns: repeat(3, 1fr);
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       margin-top: 40px;
       gap: 8px;
       
