@@ -152,7 +152,7 @@
 
   &-startup {
     margin-top: 60px;
-    width: 18%;
+    width: 12%;
     display: flex;
     gap: 36px;
     justify-content: center;
@@ -164,14 +164,14 @@
     }
     
     @include tablet {
-      width: 25%;
+      width: 12%;
       a {
         min-width: 50px;
       }
     }
     
     @include phone {
-      width: 38%;
+      width: 18%;
       margin-top: 20px;
       gap: 16px;
       
