@@ -119,10 +119,7 @@ function Contact() {
 
         <div className="links-row">
 
-          <a href="https://mlh.io/privacy" target="_blank" rel="noreferrer">
-            Privacy Policy
-          </a>
-          <a
+          {/*<a
             href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
             target="_blank"
             rel="noreferrer"
@@ -135,7 +132,7 @@ function Contact() {
             rel="noreferrer"
           >
             WiCS
-          </a>
+          </a>*/}
         </div>
 
         <div className="socials-row">

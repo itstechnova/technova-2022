@@ -61,17 +61,7 @@
     width: 50%;
     padding-top: 40px;
     @include phone {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-    .plant-and-bee {
-      width: 80%;
-      animation: bounce 3s linear infinite;
-      @include phone {
-        padding-top: 0;
-        padding-bottom: 20px;
-      }
+      display: none;
     }
   }
 

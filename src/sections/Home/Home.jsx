@@ -60,7 +60,6 @@ const Home = () => {
           <div className="textloop">
             <TextLoop/>
           </div>
-          <h1>Hack with Us</h1>
           <p>
             <span>University of Waterloo's&nbsp;</span>
             <span>Women+ in Tech Hackathon</span>

@@ -50,13 +50,13 @@
 
 .email-card {
   display: block;
-  width: 55%;
+  width: 400px;
   padding: 20px 24px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   text-align: left;
   @include tablet {
-    width: 60%;
+    width: 400px;
     padding: 16px 24px;
     line-height: 24px;
     font-size: 16px;
