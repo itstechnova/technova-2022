@@ -67,7 +67,7 @@ const Home = () => {
           <p>
             <span>August 23-28, 2022</span>
             <span className="dot"> • </span>
-            <span>Virtual Event </span>
+            <span>Hybrid Event </span>
           </p>
           <div className="links">
             <Button
