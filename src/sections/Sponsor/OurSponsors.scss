@@ -160,26 +160,26 @@
     gap: 36px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
     a {
-      min-width: 150px;
-      max-width: 150px;
+      min-width: 140px;
+      max-width: 140px;
+      flex: 1 0 50%
     }
     
     @include tablet {
-      width: 12%;
       a {
-        min-width: 140px;
+        min-width: 75px;
+        flex: 1 0 50%
       }
     }
     
     @include phone {
-      width: 18%;
       margin-top: 20px;
       gap: 16px;
       
       a {
-        min-width: 0;
         width: 100%;
         
         img {
