@@ -4,7 +4,7 @@ import Button from "../../components/Button/Button";
 
 import telescope from "../../resources/images/graphics/telescope.svg";
 
-//import ShowCase from "./ShowCase"
+import ShowCase from "./ShowCase"
 import OurSponsors from "./OurSponsors";
 import "./SponsorUs.scss";
 
@@ -37,10 +37,10 @@ const SponsorUs = () => (
             <img className="telescope" src={telescope} alt="telescope" />
           </div>
         </div>
+        <ShowCase />
         <OurSponsors />
       </div>
     </SectionWrapper>
-    {/*<ShowCase />*/}
   </div>
 );
 
