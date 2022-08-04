@@ -2,16 +2,17 @@ import React from "react";
 import "./OurSponsors.scss";
 
 import toyota from "../../resources/images/sponsors/toyota.png";
-import scotiabank from "../../resources/images/sponsors/scotiabank.jpeg";
+import scotiabank from "../../resources/images/sponsors/scotiabank.png";
 import cockroach from "../../resources/images/sponsors/cockroach-labs.png";
 import uplift from "../../resources/images/sponsors/uplift.png";
-import google from "../../resources/images/sponsors/google.png";
+import google from "../../resources/images/sponsors_2021/google.png";
 import microsoft from "../../resources/images/sponsors/microsoft.png";
 import meta from "../../resources/images/sponsors/meta.png";
 import sps from "../../resources/images/sponsors/sps.png";
 import otto from "../../resources/images/sponsors/otto.png";
-import cloudflare from "../../resources/images/sponsors/cloudflare.jpg";
+import cloudflare from "../../resources/images/sponsors/cloudflare.png";
 import d2l from "../../resources/images/sponsors/d2l.png";
+import cisco from "../../resources/images/sponsors/CiscoMeraki.png";
 
 import wie from "../../resources/images/logo/wie.png";
 import wics from "../../resources/images/logo/wics.png";
@@ -62,7 +63,7 @@ const bronze = [
   { 
     logo: otto, 
     alt: "Clearpath", 
-    link: "" 
+    link: "https://ottomotors.com/careers/jobs" 
   },
   {
     logo: cloudflare,
@@ -74,6 +75,11 @@ const bronze = [
     alt: "D2L",
     link: "https://www.d2l.com/careers/early-talent/"
   },
+  {
+    logo: cisco,
+    alt: "Cisco Meraki",
+    link: "https://www.themuse.com/profiles/ciscomeraki"
+  }
 ];
 
 const startup = [

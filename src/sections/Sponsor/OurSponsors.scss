@@ -123,14 +123,17 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     a {
-      max-width: 250px;
+      max-width: 200px;
+      flex: 1 0 50%
     }
     
     @include tablet {
       a {
         min-width: 80px;
+        flex: 1 0 25%
       }
     }
     
@@ -194,16 +197,16 @@
     display: flex;
     /* align-content: center; */
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     img {
-      max-width: 300px;
+      max-width: 150px;
     }
     
 
     @include tablet {
       img {
-        max-width: 200px;
+        max-width: 100px;
       }
     }
     
