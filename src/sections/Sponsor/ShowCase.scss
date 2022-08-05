@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    margin-left: 250px;
     color: black;
 
     &::-webkit-scrollbar {
@@ -16,7 +15,6 @@
     &::-webkit-scrollbar-track {
       background-color: #FFFAF3;
       border-radius: 4px;
-      margin-right: 50px;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -35,18 +33,26 @@
 .showcase {
   &-img {
     width: 50%;
-    height: 20%;
-    padding: 50px;
+    margin: 80px 0 20px 0;
+
+    @include phone {
+      margin: 10px 0 5px 0
+    }
   }
 
   &-card {
     background-image: url("../../resources/images/WiCSBg.png");
     background-repeat: no-repeat;
-      background-size: 100% 100%;
-      min-width: 60%;
-      height: 400px;
-      margin: 50px 50px 70px 0;
-      position: relative;
+    background-size: 100% 100%;
+    min-width: 75%;
+    margin: 50px 50px 70px 0;
+    position: relative;
+    border-radius: 15px;
+
+    @include phone {
+      min-width: 500px;
+    }
+
   }
 
   &-content {
@@ -54,9 +60,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    justify-content: center;
+    height: 60%;
 
-  &-quote {
+    p {
+      padding-left: 30px;
+
+      @include phone {
+        font-size: 15px;
+      }
+    }
+
+    @include phone {
+      overflow-y: scroll;
+      height: 300px;
+      justify-content: flex-start;
+
+      &:nth-child(1) {
+        justify-content: space-between;
+      }
+    }
   }
 
   &-button {
@@ -71,6 +94,11 @@
     cursor: pointer;
     margin-bottom: 20px;
     margin-left: 20%;
+
+    @include phone {
+      position: relative;
+      margin-bottom: 10px;
+    }
   }
 
   &-button-content {
@@ -80,9 +108,37 @@
     align-items: center;
     p {
       margin-right: 20px;
+      font-weight: 100;
+    }
+
+    @include phone {
+      padding: 5px 10px;
+
+      img {
+        width: 20px;
+      }
+
+      p {
+        font: 13px;
+      }
     }
   }
-  
-    // height: 100px;
+
+}
+
+.microsoft {
+  margin: 100px 0 0 0;
+
+  @include phone {
+    margin: 0;
+  }
+}
+
+.sps {
+  width: 40%;
+}
+
+.google {
+  width: 40%;
 }
   
