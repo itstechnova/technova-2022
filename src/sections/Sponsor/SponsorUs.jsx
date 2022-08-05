@@ -37,10 +37,10 @@ const SponsorUs = () => (
             <img className="telescope" src={telescope} alt="telescope" />
           </div>
         </div>
+        {/*<ShowCase />*/}
         <OurSponsors />
       </div>
     </SectionWrapper>
-    {/*<ShowCase />*/}
   </div>
 );
 
