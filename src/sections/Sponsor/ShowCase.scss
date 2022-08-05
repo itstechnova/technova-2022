@@ -25,7 +25,7 @@
 
     // TODO: add supports fro firefox
 
-    @include phone {
+    @include tablet {
       margin: 0px;
     }
   }
@@ -35,7 +35,7 @@
     width: 50%;
     margin: 80px 0 20px 0;
 
-    @include phone {
+    @include tablet {
       margin: 10px 0 5px 0
     }
   }
@@ -49,7 +49,7 @@
     position: relative;
     border-radius: 15px;
 
-    @include phone {
+    @include tablet {
       min-width: 500px;
     }
 
@@ -66,12 +66,12 @@
     p {
       padding-left: 30px;
 
-      @include phone {
+      @include tablet {
         font-size: 15px;
       }
     }
 
-    @include phone {
+    @include tablet {
       overflow-y: scroll;
       height: 300px;
       justify-content: flex-start;
@@ -95,7 +95,7 @@
     margin-bottom: 20px;
     margin-left: 20%;
 
-    @include phone {
+    @include tablet {
       position: relative;
       margin-bottom: 10px;
     }
@@ -111,7 +111,7 @@
       font-weight: 100;
     }
 
-    @include phone {
+    @include tablet {
       padding: 5px 10px;
 
       img {
@@ -129,7 +129,7 @@
 .microsoft {
   margin: 100px 0 0 0;
 
-  @include phone {
+  @include tablet {
     margin: 0;
   }
 }
