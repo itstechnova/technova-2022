@@ -123,14 +123,17 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     a {
-      max-width: 250px;
+      max-width: 200px;
+      flex: 1 0 50%
     }
     
     @include tablet {
       a {
         min-width: 80px;
+        flex: 1 0 25%
       }
     }
     
@@ -157,26 +160,26 @@
     gap: 36px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
     a {
-      min-width: 60px;
-      max-width: 150px;
+      min-width: 140px;
+      max-width: 140px;
+      flex: 1 0 50%
     }
     
     @include tablet {
-      width: 12%;
       a {
-        min-width: 50px;
+        min-width: 75px;
+        flex: 1 0 50%
       }
     }
     
     @include phone {
-      width: 18%;
       margin-top: 20px;
       gap: 16px;
       
       a {
-        min-width: 0;
         width: 100%;
         
         img {
@@ -194,16 +197,16 @@
     display: flex;
     /* align-content: center; */
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     img {
-      max-width: 300px;
+      max-width: 150px;
     }
     
 
     @include tablet {
       img {
-        max-width: 200px;
+        max-width: 100px;
       }
     }
     
