@@ -125,6 +125,16 @@
     align-items: center;
     flex-wrap: wrap;
 
+    // faire
+    a:nth-child(7) img {
+      width: 65%;
+    }
+
+    // hrt
+    a:nth-child(8) img {
+      width: 70%;
+    }
+
     a {
       max-width: 200px;
       flex: 1 0 50%

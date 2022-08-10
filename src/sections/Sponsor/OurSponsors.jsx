@@ -13,10 +13,13 @@ import otto from "../../resources/images/sponsors/otto.png";
 import cloudflare from "../../resources/images/sponsors/cloudflare.png";
 import d2l from "../../resources/images/sponsors/d2l.png";
 import cisco from "../../resources/images/sponsors/CiscoMeraki.png";
+import imc from "../../resources/images/sponsors/imc.png";
+import faire from "../../resources/images/sponsors/faire.png";
+import hrt from "../../resources/images/sponsors/hrt.png";
 
 import wie from "../../resources/images/logo/wie.png";
 import wics from "../../resources/images/logo/wics.png";
-import velocity from "../../resources/images/logo/velocity.png"
+import velocity from "../../resources/images/logo/velocity.png";
 
 const gold = [
   {
@@ -42,10 +45,15 @@ const silver = [
     alt: "Scotiabank",
     link: "https://www.scotiabank.com/ca/en/about.html",
   },
-  { 
-    logo: google, 
-    alt: "Google", 
-    link: "https://careers.google.com/students/" 
+  {
+    logo: google,
+    alt: "Google",
+    link: "https://careers.google.com/students/",
+  },
+  {
+    logo: imc,
+    alt: "IMC",
+    link: "https://careers.imc.com/us/en/student-opportunities",
   },
 ];
 
@@ -55,31 +63,41 @@ const bronze = [
     alt: "Toyota",
     link: "https://tmmc.ca/en/toyota-canada-careers/",
   },
-  { 
-    logo: meta, 
-    alt: "Meta", 
-    link: "https://www.metacareers.com/" 
+  {
+    logo: meta,
+    alt: "Meta",
+    link: "https://www.metacareers.com/",
   },
-  { 
-    logo: otto, 
-    alt: "Clearpath", 
-    link: "https://ottomotors.com/careers/jobs" 
+  {
+    logo: otto,
+    alt: "Clearpath",
+    link: "https://ottomotors.com/careers/jobs",
   },
   {
     logo: cloudflare,
     alt: "Cloudflare",
-    link: "https://www.cloudflare.com/careers/"
+    link: "https://www.cloudflare.com/careers/",
   },
   {
     logo: d2l,
     alt: "D2L",
-    link: "https://www.d2l.com/careers/early-talent/"
+    link: "https://www.d2l.com/careers/early-talent/",
   },
   {
     logo: cisco,
     alt: "Cisco Meraki",
-    link: "https://www.themuse.com/profiles/ciscomeraki"
-  }
+    link: "https://www.themuse.com/profiles/ciscomeraki",
+  },
+  {
+    logo: faire,
+    alt: "faire",
+    link: "https://www.faire.com/careers",
+  },
+  {
+    logo: hrt,
+    alt: "hrt",
+    link: "https://www.hudsonrivertrading.com/",
+  },
 ];
 
 const startup = [
