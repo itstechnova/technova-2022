@@ -37,7 +37,7 @@ const SponsorUs = () => (
             <img className="telescope" src={telescope} alt="telescope" />
           </div>
         </div>
-        {/*<ShowCase />*/}
+        <ShowCase />
         <OurSponsors />
       </div>
     </SectionWrapper>
