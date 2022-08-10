@@ -3,6 +3,7 @@ import arrow from "../../resources/images/WiCSButton.svg";
 import google from "../../resources/images/sponsors_2021/google.png";
 import microsoft from "../../resources/images/sponsors/microsoft.png";
 import sps from "../../resources/images/sponsors/sps.png";
+import imc from "../../resources/images/sponsors/imc.png";
 import "./ShowCase.scss";
 
 var showcase = [
@@ -37,6 +38,14 @@ var showcase = [
     passenger: "Google",
     quote:
       "Our mission is to organize the world's information and make it universally accessible and useful. At Google, we know that every employee has something important to say, and that every employee is integral to our success. Googlers thrive in small, focused teams and high-energy environments, believe in the ability of technology to change the world, and are as passionate about their lives as they are about their work. ",
+  },
+  {
+    image: imc,
+    link: "https://careers.imc.com/us/en/student-opportunities",
+    alt: "imc",
+    passenger: "IMC trading",
+    quote:
+      "For three decades IMC has provided liquidity to the financial markets globally. Specialized in algorithmic trading and advanced technology, we set the pace for the evolution of market making. \n If you have a passion for problem solving, technology, and innovation, our training, environment, and culture will help you realize your potential. Anyone can make an impact at IMC, and everyone is encouraged to do so.",
   },
 ];
 
