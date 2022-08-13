@@ -19,12 +19,12 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 const logoRoute = { logoSrc: logo, sectionId: "landing" };
 const routes = [
-    { label: nav.about, sectionId: "about" },
-    { label: nav.sponsor, sectionId: "sponsor" },
-    //{ label: nav.keynote, sectionId: "keynote" },
-    //{ label: nav.judges, sectionId: "judges" },
-    { label: nav.faq, sectionId: "faq" },
-    { label: nav.contact, sectionId: "contact" },
+  { label: nav.about, sectionId: "about" },
+  { label: nav.sponsor, sectionId: "sponsor" },
+  //{ label: nav.keynote, sectionId: "keynote" },
+  //{ label: nav.judges, sectionId: "judges" },
+  { label: nav.faq, sectionId: "faq" },
+  { label: nav.contact, sectionId: "contact" },
 ];
 
 // landing page only flag
