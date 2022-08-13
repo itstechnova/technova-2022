@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import Typist from "react-typist";
 import "./Home.scss";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
-import Button from "../../components/Button/Button";
-import landing from "../../resources/strings/landing";
 import goose from "../../resources/images/goose.png";
 
 const TextLoop = () => {
@@ -57,8 +55,11 @@ const Home = () => {
             <h2>TechNova</h2>
             <p>presents</p>
           </div>
+          <div className="heading">
+            <h1>Hack with Us</h1>
+          </div>
           <div className="textloop">
-            <TextLoop/>
+            <TextLoop />
           </div>
           <p>
             <span>University of Waterloo's&nbsp;</span>
@@ -69,18 +70,6 @@ const Home = () => {
             <span className="dot"> • </span>
             <span>Hybrid Event </span>
           </p>
-          <div className="links">
-            <Button
-              link={landing.applyLink}
-              label={landing.applyLabel}
-              type={"button-2"}
-            />
-            <Button
-              link={landing.mentorLink}
-              label={landing.mentorLabel}
-              type={"button-2"}
-            />
-          </div>
         </div>
       </div>
     </SectionWrapper>
