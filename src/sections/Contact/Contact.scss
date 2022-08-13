@@ -1,206 +1,211 @@
 @import "../../constants";
 
 @keyframes bounce-up {
-    0% {
-        transform: translateY(50px);
-        opacity: 1;
-    }
-    50% {
-        transform: translateY(30px);
-        opacity: 0.7;
-    }
-    100% {
-        transform: translateY(50px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(30px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
 }
 
-::placeholder { 
-    color: white;
+::placeholder {
+  color: white;
 }
 
 .contact-container {
-    text-align: left;
+  text-align: left;
+  margin-top: 100px;
 }
 
 .sub-title {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.email-input{
-    min-width: 328px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    border: none;
-    font-family: "Poppins";
-    color: white;
-    padding-left: 15px;
-    @include phone {
-        min-width: 200px;
-        width: 90%;
-    }
+.email-input {
+  min-width: 328px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins";
+  color: white;
+  padding-left: 15px;
+  @include phone {
+    min-width: 200px;
+    width: 90%;
+  }
 }
 
 .email-wrapper {
-    margin-top: 10px;
-    position: relative;
+  margin-top: 10px;
+  position: relative;
 }
 
 .email-card {
-    display: block;
-    width: 55%;
-    padding: 20px 24px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    text-align: left;
-    @include tablet {
-      width: 60%;
-      padding: 16px 24px;
-      line-height: 24px;
-      font-size: 16px;
-    }
+  display: block;
+  width: 400px;
+  padding: 20px 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  text-align: left;
+  @include tablet {
+    width: 400px;
+    padding: 16px 24px;
+    line-height: 24px;
+    font-size: 16px;
+  }
 }
 
+@media (max-width: 422px) {
+  .email-card {
+    width: 85%;
+  }
+}
 .email-text {
-    font-size: medium;
-    
-    .email-link {
-        color: #ffc4bc;
-        text-decoration: none;
-        font-weight: 400;
-    }
+  font-size: medium;
+
+  .email-link {
+    color: #ffc4bc;
+    text-decoration: none;
+    font-weight: 400;
+  }
 }
 
-
-.submit-wrapper{
-    cursor: pointer;
-    width: 47px;
-    height: 39px;
-    margin-top: 2px;
-    left: 287px;
-    border-radius: 3px;
-    display: inline;
-    position: absolute;
-    &:hover {
-        opacity: 0.7;
-    }
-    @include phone {
-        left: auto;
-        right: 8%;
-    }
+.submit-wrapper {
+  cursor: pointer;
+  width: 47px;
+  height: 39px;
+  margin-top: 2px;
+  left: 287px;
+  border-radius: 3px;
+  display: inline;
+  position: absolute;
+  &:hover {
+    opacity: 0.7;
+  }
+  @include phone {
+    left: auto;
+    right: 8%;
+  }
 }
 
-.submit-btn{
-    width: 15px;
-    height: 15px;
+.submit-btn {
+  width: 15px;
+  height: 15px;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .inclusivity-title {
-    font-weight: 400;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .inclusivity-text {
-    font-size: medium;
-    margin-bottom: 50px;
+  font-size: medium;
+  margin-bottom: 50px;
 }
 
-.contact-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    @include tablet {
-        flex-direction: column;
-    }
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .contact-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding-bottom: 10px;
+  img {
+    width: 90%;
+    //animation: bounce-up 3s linear infinite;
+  }
+  @include tablet {
+    padding: 0px 0 60px 0;
+    width: 0%;
+    justify-content: flex-start;
     img {
-        width: 90%;
-        //animation: bounce-up 3s linear infinite;
+      width: 60%;
     }
-    @include tablet {
-        padding: 0px 0 60px 0;
-        width: 0%;
-        justify-content: flex-start;
-        img {
-            width: 60%;
-        }
+  }
+  @include phone {
+    width: 0%;
+    img {
+      width: 100%;
     }
-    @include phone {
-        width: 0%;
-        img {
-            width: 100%;
-        }
-    }
+  }
 }
 
-.contact{
-    min-width: 500px;
-    width: 80%;
-    @include tablet {
-       width: 100%;
-    }
-    @include phone {
-        min-width: 0;
-    }
+.contact {
+  min-width: 500px;
+  width: 80%;
+  @include tablet {
+    width: 100%;
+  }
+  @include phone {
+    min-width: 0;
+  }
 }
 
-.contact-links{
-    text-decoration: none;
+.contact-links {
+  text-decoration: none;
 }
 
 .contact-links:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.socials-row{
-    max-width: 280px;
-    margin-top: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    img {
-        padding: 10px 0;
-        &:hover {
-            opacity: 0.7;
-        }
+.socials-row {
+  max-width: 280px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  img {
+    padding: 10px 0;
+    &:hover {
+      opacity: 0.7;
     }
+  }
 }
 
-.links-row{
-    max-width: 350px;
-    margin-top: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    a {
-        font-family: "Poppins";
-        font-weight: 400;
-        text-decoration: none;
-        font-size: small;
-    }
+.links-row {
+  max-width: 350px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  a {
+    font-family: "Poppins";
+    font-weight: 400;
+    text-decoration: none;
+    font-size: small;
+  }
 }
 
 .team-title {
-    margin-top: 32px;
+  margin-top: 32px;
 }

@@ -37,7 +37,7 @@ body {
     }
     .nav {
         &-container {
-            background-color: var(--header-color);
+            background-color: #3D3D75;
             transition: all 0.25s linear;
             -webkit-box-shadow: 0px 1px 30px 1px var(--nav-shadow-color);
             -moz-box-shadow: 0px 1px 30px 1px var(--nav-shadow-color);
@@ -69,10 +69,10 @@ body {
         background-color: var(--footer-color);
         transition: all 0.25s linear;
     }
-    /*.our-sponsors-logos,
+    .our-sponsors-logos,
     .our-sponsors-partners {
         background-color: var(--sponsor-logos);
-    }*/
+    }
     .team {
         &-text {
             background-color: var(--background-color);

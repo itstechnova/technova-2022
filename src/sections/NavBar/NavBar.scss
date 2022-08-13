@@ -12,23 +12,23 @@
   }
 
   &-content {
-    margin-left: 100px;
     height: 100%;
     width: $width-lg-max;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    @include tablet {
-      margin: 0 30px;
-    }
     @include phone {
       justify-content: space-between;
     }
   }
-  
+
   &-links-container {
     display: flex;
+    margin: 0 100px;
+    @include tablet {
+      margin: 0 30px;
+    }
   }
 
   &-links {
@@ -43,6 +43,7 @@
     font-weight: 500;
     font-size: 16px;
     padding: 0 15px;
+
     &:hover {
       opacity: 0.5;
       transition: linear 0.2s;
@@ -54,6 +55,7 @@
 
   &-desktop-links {
     display: block;
+
     @include phone {
       display: none;
     }
@@ -74,7 +76,6 @@
       padding: 20px;
       width: 100%;
       box-sizing: border-box;
-      
     }
   }
 }
@@ -111,7 +112,7 @@
   opacity: 1;
   display: none;
   width: 30px;
-  padding-left: 20px;
+  padding-right: 30px;
   @include phone {
     display: block;
   }
@@ -130,3 +131,5 @@
     align-items: center;
   }
 }
+
+
