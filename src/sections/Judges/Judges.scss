@@ -6,12 +6,10 @@
 
 .judge-photos {
     display: flex;
-    // overflow: hidden;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     margin-top: 48px;
     gap: 15px;
-    // align-items: flex-start;
 }
 
 .judge-photos::-webkit-scrollbar {
@@ -74,13 +72,6 @@
         font-size:0; 
         overflow:hidden; 
         position:absolute;
-        // &.bot{
-        //   border-width: 10px; 
-        //   border-style: solid dashed dashed; 
-        //   border-color: transparent transparent rgba(255, 255, 255, 0.2) transparent; 
-        //   left: 50px; 
-        //   top: -20px;
-        // }
     }
 }
 
