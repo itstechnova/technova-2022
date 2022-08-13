@@ -39,7 +39,12 @@ const NavBar = ({ routes, logoRoute }) => {
                     {route.label}
                   </Link>
                 ))}
-                <a className="nav-link" href="https://">2021 Site</a>
+                <a
+                  className="nav-link"
+                  href="https://www.2021.itstechnova.org/"
+                >
+                  2021 Site
+                </a>
               </div>
             </div>
           </div>
@@ -78,7 +83,9 @@ const NavBar = ({ routes, logoRoute }) => {
                 {route.label}
               </Link>
             ))}
-            <a className="nav-link" href="https://">2021 Site</a>
+            <a className="nav-link" href="https://www.2021.itstechnova.org/">
+              2021 Site
+            </a>
             {/*<div style={{ display: "flex", justifyContent: "center", width: "100%", marginTop: "20px"}}>
                         <a
                             href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white"
