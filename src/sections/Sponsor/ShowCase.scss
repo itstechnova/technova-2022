@@ -5,6 +5,7 @@
     flex-direction: row;
     overflow-x: auto;
     color: black;
+    margin-top: 30px;
 
     &::-webkit-scrollbar {
       -webkit-appearance: none;
@@ -45,7 +46,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-width: 85%;
-    margin: 50px 50px 70px 0;
+    margin: 50px 50px 50px 0;
     position: relative;
     border-radius: 15px;
 

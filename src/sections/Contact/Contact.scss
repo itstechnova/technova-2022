@@ -21,6 +21,10 @@
 
 .contact-container {
   text-align: left;
+  margin-top: 100px;
+  @include tablet {
+    margin-top: 40px;
+  }
 }
 
 .sub-title {
@@ -118,6 +122,10 @@
 .inclusivity-text {
   font-size: medium;
   margin-bottom: 50px;
+
+  @include tablet {
+    margin-bottom: 10px;
+  }
 }
 
 .contact-row {

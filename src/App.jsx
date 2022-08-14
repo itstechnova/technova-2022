@@ -55,17 +55,17 @@ const App = () => {
             <Route exact path="/">
             <div className="App">
                 <NavBar routes={routes} logoRoute={logoRoute} />
-                    <Home />
-                    <About />
-                    <Testimonials />
-                    <Partners />
-                    <SponsorUs />
-                    {/*<Keynote />
-                    <Judges />*/}
-                    <FAQ />
-                    {/*<Team />*/}
-                    <Contact />
-                    <Footer />
+                <Home />
+                <About />
+                <Testimonials />
+                <Partners />
+                <SponsorUs />
+                {/*<Keynote />
+                <Judges />*/}
+                <FAQ />
+                {/*<Team />*/}
+                <Contact />
+                <Footer />
             </div>
             </Route>
         </Switch>
