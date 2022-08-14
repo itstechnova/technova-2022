@@ -89,7 +89,7 @@ const Testimonials = () => {
           </div>
 
           <div className="testimonials-wrapper-tablet">
-            <Slider {...settings}>
+            <Slider className="slider" {...settings}>
               <div>
                 <img src={testimonialsList[0].selected} alt="" />
                 <div className="testimonials-text-tablet">
