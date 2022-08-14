@@ -1,7 +1,11 @@
 import React from "react";
+import Slider from "react-slick";
 import { useState } from "react";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import "./Testimonials.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import testimonials from "../../resources/strings/testimonials";
 import vanessaImg from "../../resources/images/testimonials/vanessa-testimonial.png";
 import vanessaSelectedImg from "../../resources/images/testimonials/vanessa-testimonial-selected.png";
@@ -33,6 +37,15 @@ const testimonialsList = [
 
 const Testimonials = () => {
   const [index, setIndex] = useState(1);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 0,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false
+  };
 
   return (
     <SectionWrapper id="testimonials">
@@ -76,24 +89,26 @@ const Testimonials = () => {
           </div>
 
           <div className="testimonials-wrapper-tablet">
-            <div>
-              <img src={testimonialsList[0].selected} alt="" />
-              <div className="testimonials-text-tablet">
-                <p>{testimonialsList[0].testimonial}</p>
+            <Slider {...settings}>
+              <div>
+                <img src={testimonialsList[0].selected} alt="" />
+                <div className="testimonials-text-tablet">
+                  <p>{testimonialsList[0].testimonial}</p>
+                </div>
               </div>
-            </div>
-            <div>
-              <img src={testimonialsList[1].selected} alt="" />
-              <div className="testimonials-text-tablet">
-                <p>{testimonialsList[0].testimonial}</p>
+              <div>
+                <img src={testimonialsList[1].selected} alt="" />
+                <div className="testimonials-text-tablet">
+                  <p>{testimonialsList[1].testimonial}</p>
+                </div>
               </div>
-            </div>
-            <div>
-              <img src={testimonialsList[2].selected} alt="" />
-              <div className="testimonials-text-tablet">
-                <p>{testimonialsList[0].testimonial}</p>
+              <div>
+                <img src={testimonialsList[2].selected} alt="" />
+                <div className="testimonials-text-tablet">
+                  <p>{testimonialsList[2].testimonial}</p>
+                </div>
               </div>
-            </div>
+            </Slider>
           </div>
         </div>
       </div>
