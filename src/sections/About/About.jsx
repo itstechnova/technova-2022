@@ -7,10 +7,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 import about from "../../resources/strings/about";
 import hackTile from "../../resources/images/graphics/hack-tile.svg";
-import HoverBox from "../../resources/images/hoverBox.svg";
 import prepareTile from "../../resources/images/graphics/prepare-tile.svg";
 import connectTile from "../../resources/images/graphics/connect-tile.svg";
-import MobileBox from "../../resources/images/mobile-box.svg"
+import HoverBox from "../../resources/images/hoverBox.svg";
+import prepareMobile from "../../resources/images/graphics/prepare-mobile.png";
+import hackMobile from "../../resources/images/graphics/hack-mobile.png";
+import connectMobile from "../../resources/images/graphics/connect-mobile.png";
 
 const About = () => {
   const settings = {
@@ -105,39 +107,24 @@ const About = () => {
       </div>
       <div className="about-mobile">
         <Slider {...settings}>
-          <div>
-            <div className="mobile-box">
-              <img src={MobileBox} alt="" />
-            </div>
-            <img className="mobile-image" src={prepareTile} alt="prepare-tile" />
-            <div className="about-caption date">
+          <div className="slider-container">
+            <img className="mobile-image" src={prepareMobile} alt="prepare-mobile" />
+            <div className="mobile-text">
               <p>{about.prepareDates}</p>
-            </div>
-            <div className="about-caption caption">
               <p>{about.prepareCaption}</p>
             </div>
           </div>
-          <div>
-            <div className="mobile-box">
-              <img src={MobileBox} alt="" />
-            </div>
-            <img className="mobile-image" src={hackTile} alt="hack-tile" />
-            <div className="about-caption date">
+          <div className="slider-container">
+            <img className="mobile-image" src={hackMobile} alt="hack-mobile" />
+            <div className="mobile-text">
               <p>{about.hackDates}</p>
-            </div>
-            <div className="about-caption caption">
               <p>{about.hackCaption}</p>
             </div>
           </div>
-          <div>
-            <div className="mobile-box">
-              <img src={MobileBox} alt="" />
-            </div>
-            <img className="mobile-image" src={connectTile} alt="connect-tile" />
-            <div className="about-caption date">
+          <div className="slider-container">
+            <img className="mobile-image" src={connectMobile} alt="connect-mobile" />
+            <div className="mobile-text">
               <p>{about.connectDates}</p>
-            </div>
-            <div className="about-caption caption">
               <p>{about.connectCaption}</p>
             </div>
           </div>

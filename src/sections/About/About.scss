@@ -175,16 +175,24 @@
   }
 }
 
-.mobile-box {
-  position: absolute;
-  margin-left: 30px;
-  margin-top: 70px;
-  z-index: 0;
+.slider-container {
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .mobile-image {
   position: relative;
-  margin-left: 40px;
-  width: 75%;
-  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.mobile-text {
+  position: absolute;
+  top: 57%;
+  margin: 10px 40px;
+
+  p {
+    margin-bottom: 10px;
+  }
 }
