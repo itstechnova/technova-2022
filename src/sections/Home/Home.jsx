@@ -56,7 +56,7 @@ const Home = () => {
             <p>presents</p>
           </div>
           <div className="heading">
-            <h1>Hack with Us</h1>
+            <h1><span>Hack <span className="muted-heading"> with Us</span></span></h1>
           </div>
           <div className="textloop">
             <TextLoop />

@@ -8,7 +8,7 @@
     @include phone {
       height: auto;
     }
-    
+
     a {
       &:hover {
         opacity: 0.5;
@@ -16,7 +16,7 @@
         transition: 0.1s linear;
       }
     }
-    
+
     p {
       font-size: $text-xsmall;
     }
@@ -31,7 +31,7 @@
 
   &-logos {
     padding: 36px;
-    border-radius: 25px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,14 +65,14 @@
     a {
       max-width: 550px;
     }
-    
+
 
     @include tablet {
       a {
         max-width: 450px;
       }
     }
-    
+
     @include phone {
       width: 100%;
       a {
@@ -96,17 +96,17 @@
     a {
       max-width: 350px;
     }
-    
+
     @include tablet {
       gap: 0px;
     }
-    
+
     @include phone {
       grid-template-columns: repeat(2, 1fr);
       margin-top: 40px;
       justify-content: space-around;
       gap: 8px;
-      
+
       a {
         img {
           max-width: 100%;
@@ -139,23 +139,23 @@
       max-width: 200px;
       flex: 1 0 50%
     }
-    
+
     @include tablet {
       a {
         min-width: 80px;
         flex: 1 0 25%
       }
     }
-    
+
     @include phone {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin-top: 40px;
       gap: 8px;
-      
+
       a {
         width: 100%;
-        
+
         img {
           height: 100%;
         }
@@ -171,27 +171,27 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+
     a {
       min-width: 140px;
       max-width: 140px;
       flex: 1 0 50%
     }
-    
+
     @include tablet {
       a {
         min-width: 75px;
         flex: 1 0 50%
       }
     }
-    
+
     @include phone {
       margin-top: 20px;
       gap: 16px;
-      
+
       a {
         width: 100%;
-        
+
         img {
           height: 100%;
         }
@@ -201,7 +201,7 @@
 
   &-partners {
     grid-template-columns: repeat(3, 1fr);
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 20px 0;
     width: 100%;
     display: flex;
@@ -212,14 +212,14 @@
     img {
       max-width: 150px;
     }
-    
+
 
     @include tablet {
       img {
         max-width: 100px;
       }
     }
-    
+
     @include phone {
       width: 100%;
       grid-template-columns: repeat(1, 1fr);

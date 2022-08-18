@@ -108,13 +108,8 @@
   }
 
   p {
-    margin-top: 12px;
-  }
-
-  @include tablet {
-    p {
-      margin-top: 3px;
-    }
+    margin-top: auto;
+    line-height: 2;
   }
 }
 
@@ -128,7 +123,7 @@
     }
 
     @include tablet {
-        text: 5px;  
+        text: 5px;
     }
 }
 
@@ -166,7 +161,7 @@ h4 {
 .landing-slogan {
   font-size: $text-xxlarge;
   font-family: "Quicksand";
-  .landing-bold {
+  .landing-slogan-bold {
     font-family: "Quicksand Bold";
   }
   @include desktop {
