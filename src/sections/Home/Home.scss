@@ -111,12 +111,6 @@
     margin-top: auto;
     line-height: 2;
   }
-
-  @include tablet {
-    p {
-      margin-top: 3px;
-    }
-  }
 }
 
 .links {
