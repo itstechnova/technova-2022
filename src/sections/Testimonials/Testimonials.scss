@@ -41,7 +41,8 @@
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      width: 40%;
+      width: 400px;
+      height: 200px
     }
     @include tablet {
       display: none;
@@ -64,7 +65,7 @@
       width: 80%;
       margin: 20px 0;
     }
-    
+
     @include tablet {
       display: block;
       img {
