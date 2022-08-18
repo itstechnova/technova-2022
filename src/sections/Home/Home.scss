@@ -57,7 +57,7 @@
     display: flex;
     align-items: flex-end;
 
-    @include tablet {
+    @include phone {
         display: none;
     }
 }
@@ -111,7 +111,7 @@
     margin-top: 12px;
   }
 
-  @include tablet {
+  @include phone {
     p {
       margin-top: 3px;
     }
@@ -127,7 +127,7 @@
         margin-left: 30px;
     }
 
-    @include tablet {
+    @include phone {
         text: 5px;  
     }
 }
@@ -172,7 +172,7 @@ h4 {
   @include desktop {
     font-size: 58px;
   }
-  @include tablet {
+  @include phone {
     font-size: $text-xlarge;
   }
   @include phone {
