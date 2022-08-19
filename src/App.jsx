@@ -32,6 +32,8 @@ const onlyLanding = false;
 
 // PDF locations in public folder
 const SponsorPackage = `${process.env.PUBLIC_URL}/pdfs/sponsorship_package.pdf`;
+const PrepWithUs = `${process.env.PUBLIC_URL}/pdfs/prep_with_us_schedule.pdf`;
+const HackWithUs = `${process.env.PUBLIC_URL}/pdfs/hack_with_us_schedule.pdf`;
 
 const App = () => {
     if (onlyLanding) {
@@ -49,6 +51,22 @@ const App = () => {
             path="/sponsorship-package"
             component={() => {
                 window.location.href = SponsorPackage;
+                return null;
+            }}
+            />
+            <Route
+            // Redirect itstechnova.org/sponsorship-package to pdf location
+            path="/prepare-with-us-schedule"
+            component={() => {
+                window.location.href = PrepWithUs;
+                return null;
+            }}
+            />
+            <Route
+            // Redirect itstechnova.org/sponsorship-package to pdf location
+            path="/hack-with-us-schedule"
+            component={() => {
+                window.location.href = HackWithUs;
                 return null;
             }}
             />
