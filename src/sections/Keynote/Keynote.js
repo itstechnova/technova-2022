@@ -15,8 +15,8 @@ const Keynote = () => (
 
       <p className="keynote-text">
         <div className="keynote-name-title">
-          <h3 className="keynote-name">Ayla Orucevic</h3>
-          <h8 className="keynote-name">CEO of Tesla</h8>
+          <h3 className="keynote-name">Stephanie Mills</h3>
+          <h8 className="keynote-name">CEO and Founder of CodeGem</h8>
         </div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
