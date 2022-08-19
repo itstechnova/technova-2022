@@ -119,14 +119,14 @@ function Contact() {
 
         <div className="links-row">
 
-          {/*<a
-            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+          <a
+            href="https://docs.google.com/document/d/1fW6s1bATEMO-nS3TSXZIe2i7BY6AYVZV3gQmFanTqeY/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
             Code of Conduct
           </a>
-          <a
+          {/*<a
             href="https://cs.uwaterloo.ca/wics"
             target="_blank"
             rel="noreferrer"
