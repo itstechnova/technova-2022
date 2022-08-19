@@ -1,128 +1,144 @@
-import React from "react";
+import React, { useState } from "react";
+import Slider from "react-slick";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import "./Judges.scss";
-import judge1 from "../../resources/images/judges/judge1.svg";
-import judge2 from "../../resources/images/judges/judge2.svg";
-import judge3 from "../../resources/images/judges/judge3.svg";
-import judge4 from "../../resources/images/judges/judge4.svg";
-import judge5 from "../../resources/images/judges/judge5.svg";
-import judge6 from "../../resources/images/judges/judge6.svg";
-import judge7 from "../../resources/images/judges/judge7.svg";
-import judge8 from "../../resources/images/judges/judge8.svg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import kristina_moore from "../../resources/images/judges/kristina-moore.jpg";
+import jen_macklin from "../../resources/images/judges/jen-macklin.jpeg";
+import mila_banerjee from "../../resources/images/judges/mila-banerjee.png";
+import pooja_joshi from "../../resources/images/judges/pooja-joshi.jpg";
+import kendra_wiswell from "../../resources/images/judges/kendra-wiswell.PNG";
+import cressa_price from "../../resources/images/judges/cressa-price.jpg";
+import chayene_banta from "../../resources/images/judges/chayene-banta.png";
+import anne_nagle from "../../resources/images/judges/anne-nagle.jpg";
+import karan_huynh from "../../resources/images/judges/karan-huynh.png";
 import judgeG from "../../resources/images/judges/judgeG.svg";
-
-const JudgeCard = ({ photo }) => {
-  return (
-    <div className="judge-wrapper">
-      <div>
-        <div className="judge-img-big-wrapper">
-          <div className="judge-img-small-wrapper">
-            <img alt="" src={photo.pic} className="judge-img" />
-          </div>
-        </div>
-
-        <div className="judge-detail">
-          <span className="bot" />
-          {photo.name} | {photo.role}, {photo.org}
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const judgeList = [
   {
-    name: "Charlie Cheever",
-    org: "Expo",
-    pic: judge1,
-    role: "CEO & Co-Founder",
+    name: "Kristina Moore | ",
+    org: "",
+    pic: kristina_moore,
+    role: "Principal Product Manager",
   },
   {
-    name: "Ketyurah Pinto",
-    org: "Microsoft",
-    pic: judge2,
-    role: "Sr. Manager, Change Transformation",
-  },
-  {
-    name: "Kasey McMaster",
-    org: "SPS Commerce",
-    pic: judge3,
-    role: "Associate Business Analyst",
-  },
-  {
-    name: "Nikki Riemersma",
-    org: "SPS Commerce",
-    pic: judge4,
-    role: "Mgr II, Corporate Technology",
-  },
-  {
-    name: "Charlotte Countryman",
-    org: "SPS Commerce",
-    pic: judgeG,
-    role: "Application Engineer",
-  },
-  {
-    name: "Seema Bansal",
-    org: "Microsoft",
-    pic: judge5,
-    role: "Program Manager",
-  },
-  {
-    name: "Chloe Collins",
-    org: "JP Morgan",
-    pic: judgeG,
+    name: "Jen Macklin | ",
+    org: "",
+    pic: jen_macklin,
     role: "Software Engineer",
   },
   {
-    name: "Shoma Sinha",
-    org: "Concept",
-    pic: judge6,
-    role: "Partnerships Development Officer",
-  },
-  {
-    name: "Rukmani Gopalan",
-    org: "Microsoft",
-    pic: judge7,
-    role: "Principal PM Manager",
-  },
-  {
-    name: "Mila Banerjee",
-    org: "Concept",
-    pic: judge8,
-    role: "Business Advisor Deeptech - AI",
-  },
-  {
-    name: "Cressa Price",
-    org: "D2L",
+    name: "Aydrian Howard | ",
+    org: "Cockroach Labs",
     pic: judgeG,
-    role: "Engineering Director",
+    role: "Developer Advocate, "
+  }, 
+  {
+    name: "Mila Banerjee | ",
+    org: "",
+    pic: mila_banerjee,
+    role: "CEO & Tech Lead"
   },
+  {
+    name: "Pooja Joshi | ",
+    org: "D2L",
+    pic: pooja_joshi,
+    role: "Software Test Developer, "
+  },
+  {
+    name: "Kendra Wiswell | ",
+    org: "SPS Commerce",
+    pic: kendra_wiswell,
+    role: "Senior Technical Account Manager, "
+  },
+  {
+    name: "Cressa Price | ",
+    org: "D2L",
+    pic: cressa_price,
+    role: "Senior Director, Software Engineering, "
+  },
+  {
+    name: "Chayene Banta | ",
+    org: "SPS Commerce",
+    pic: chayene_banta,
+    role: "Assoc. Application Engineer, "
+  },
+  {
+    name: "Anne Nagle | ",
+    org: "SPS Commerce",
+    pic: anne_nagle,
+    role: "Customer Success Executive, "
+  },
+  {
+    name: "Karan Huynh | ",
+    org: "Meta",
+    pic: karan_huynh,
+    role: "Software Engineer, "
+  },
+  {
+    name: "",
+    org: "Cloudflare",
+    pic: judgeG,
+    role: ""
+  }
 ];
 
 const Judges = () => {
-  // const [photoIdx, setPhotoIdx] = useState(3);
+  const [id, setId] = useState(0);
 
-  const leftScroll = () => {
-    const scroll = document.querySelector(".judge-photos");
-    scroll.scrollBy(-200, 0);
-  };
-
-  const rightScroll = () => {
-    const scroll = document.querySelector(".judge-photos");
-    scroll.scrollBy(200, 0);
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      }
+    ]
   };
 
   return (
     <SectionWrapper id="judges">
-      <h1 className="keynote-title">Judges</h1>
-
-      <div className="judge-photos">
-        <div className="left" onClick={leftScroll} />
-        {judgeList.map((info, index) => {
-          return <JudgeCard photo={info} />;
-        })}
-        <div class="right" onClick={rightScroll} />
+      <div className="judges-container">
+        <div className="judges-title">
+          <h1>Judges</h1>
+        </div>
+        <div className="slider-container">
+          <Slider {...settings}>
+            {judgeList.map((info, index) => (
+            <div className="judge-wrapper">
+              <div>
+                <div className="judge-img-big-wrapper">
+                  <div className="judge-img-small-wrapper">
+                    <img alt="" src={info.pic} className="judge-img" onMouseOver={() => setId(index)} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            ))}
+          </Slider>
+        </div>
+        <div className="judge-detail">
+          <p>{judgeList[id].name}{judgeList[id].role}{judgeList[id].org}</p>
+        </div>
       </div>
+      
     </SectionWrapper>
   );
 };

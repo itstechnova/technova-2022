@@ -107,3 +107,8 @@ $width-lg-max: 1435px;
     @content;
   }
 }
+@mixin large-desktop {
+  @media (max-width: #{$width-lg-max}) {
+    @content;
+  }
+}

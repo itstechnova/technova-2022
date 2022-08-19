@@ -159,3 +159,14 @@ a {
 .slick-dots li.slick-active button:before {
     color:white !important;
 }
+
+.slick-track {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.slick-slider{
+    max-width: 100vw;
+    width: 100%;
+    overflow: hidden !important;
+}
