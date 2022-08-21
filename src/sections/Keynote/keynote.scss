@@ -49,14 +49,8 @@
   }
 }
 
-.images {
-  position: relative;
-  padding-right: 10px;
-}
-
-.keynote-image{
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  left: 35%;
+.ufo {
+  @include phone {
+    width: 100%;
+  }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
-import ufo from "../../resources/images/ufo.png";
-import keynote from "../../resources/images/keynote.png";
+import keynote_ufo from "../../resources/images/keynote-ufo.png";
 import "./keynote.scss"
 
 const Keynote = () => (
@@ -9,8 +8,7 @@ const Keynote = () => (
     <h1 className="keynote-title">Keynote Speaker</h1>
     <div className="keynote-wrapper">
       <div className="images">
-        <img src={ufo} alt="" className="ufo" />
-        <img src={keynote} alt="" className="keynote-image" />
+        <img src={keynote_ufo} alt="" className="ufo" />
       </div>
 
       <p className="keynote-text">
