@@ -8,7 +8,7 @@ import Partners from "./sections/Partner/OurPartners";
 import SponsorUs from "./sections/Sponsor/SponsorUs";
 import FAQ from "./sections/FAQ/FAQ";
 import Contact from "./sections/Contact/Contact";
-//import Team from "./sections/Team/Team";
+import Team from "./sections/Team/Team";
 import Keynote from "./sections/Keynote/Keynote";
 import Judges from "./sections/Judges/Judges";
 import Footer from "./sections/Footer/Footer";
@@ -24,6 +24,7 @@ const routes = [
   { label: nav.keynote, sectionId: "keynote" },
   { label: nav.judges, sectionId: "judges" },
   { label: nav.faq, sectionId: "faq" },
+  { label: nav.team, sectionId: "team" },
   { label: nav.contact, sectionId: "contact" },
 ];
 
@@ -81,7 +82,7 @@ const App = () => {
                 <Keynote />
                 <Judges />
                 <FAQ />
-                {/*<Team />*/}
+                <Team />
                 <Contact />
                 <Footer />
             </div>

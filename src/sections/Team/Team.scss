@@ -8,15 +8,46 @@
         }
     }
 
-    &-text {
-        padding: 2px 0 10px 0;
-        @include phone {
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
-            top: 60px;
-            align-self: flex-start;
-            width: 100%;
+    &-title {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+        @include large-desktop {
+            padding: 0;
         }
+
+        @media (max-width: 1400px) {
+            padding: 0 50px;
+        }
+
+        @media (max-width: 1350px) {
+            padding: 0 75px;
+        }
+
+        @media (max-width: 1300px) {
+            padding: 0 100px;
+        }
+
+        @include tablet {
+            padding: 0;
+        }
+
+        h1 {
+            float: left;
+        }
+    }
+
+    &-text {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        display: inline-block;
+
         &-default {
             display: block;
             @include phone {
@@ -29,49 +60,36 @@
                 display: block;
             }
         }
-        div {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            p {
-                text-align: left;
-                margin-left: 10px;
+    }
+
+    &-photo {
+        
+        img {
+            border-radius: 50%;
+            align-self: center;
+            width: 170px;
+            height: 170px;
+            padding: 10px 0;
+            margin: 0 auto;
+            
+            @include tablet {
+                width: auto;
+                height: 130px;
             }
-            img {
-                width: 32px;
-                @include phone {
-                    width: 48px;
-                }
+            
+            @include phone {
+                width: auto;
+                height: 90px;
             }
         }
     }
 
-    &-photos {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 20px;
-        align-items: flex-start;
-        @include tablet {
-            grid-template-columns: repeat(5, 1fr);
-        }
-        @include phone {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        @include small-phone {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    &-linkedin {
         img {
-            align-self: flex-start;
-            width: 100px;
-            height: 100px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
-            @include phone {
-                width: 90%;
-                height: auto;
+            padding: 10px 0;
+            &:hover {
+            opacity: 0.7;
             }
         }
-
     }
 }
