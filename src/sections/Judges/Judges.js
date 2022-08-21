@@ -119,7 +119,7 @@ const Judges = () => {
         <div className="judges-title">
           <h1>Judges</h1>
         </div>
-        <div className="slider-container">
+        <div className="judges-slider-container">
           <Slider {...settings}>
             {judgeList.map((info, index) => (
             <div className="judge-wrapper">

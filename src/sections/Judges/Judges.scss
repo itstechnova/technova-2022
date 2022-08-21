@@ -40,19 +40,12 @@
     }
 }
 
+.judges-slider-container {
+    margin-bottom: 20px;
+}
+
 .judges-info {
     text-align: center;
-}
-
-.judge-photos {
-    display: flex;
-    // overflow-x: auto;
-    // overscroll-behavior-inline: contain;
-    margin-top: 48px;
-}
-
-.judge-photos::-webkit-scrollbar {
-    -webkit-appearance: none;
 }
 
 .judge-img {
@@ -63,12 +56,12 @@
     margin: 0 auto;
     
     @include tablet {
-        width: auto;
+        width: 130px;
         height: 130px;
     }
     
     @include phone {
-        width: auto;
+        width: 90px;
         height: 90px;
     }
 }
