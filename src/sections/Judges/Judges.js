@@ -95,6 +95,8 @@ const Judges = () => {
     slidesToScroll: 5,
     autoplay: true,
     autoplaySpeed: 2500,
+    dots: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 900,

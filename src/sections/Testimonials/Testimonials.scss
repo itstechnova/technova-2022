@@ -92,11 +92,3 @@
     }
   }
 }
-
-.slider {
-  display: none;
-
-  @include tablet {
-    display: block;
-  }
-}
