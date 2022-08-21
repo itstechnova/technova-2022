@@ -53,7 +53,7 @@ import goose from "../../resources/images/team/goose.png";
 
 
 import SocialMediaLink from "../../components/SocialMediaLink/SocialMediaLink";
-import linkedin from "../../resources/images/socials/linkedinDark.svg";
+import linkedin from "../../resources/images/socials/linkedinTeam.svg";
 
 const photos = [
     { hot: lucy, goof: goose, name: "Lucy Shen", role: "Director", linkedin: "https:/www.linkedin.com/in/lucy-shen/" },
