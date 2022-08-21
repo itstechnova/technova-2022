@@ -1,30 +1,29 @@
 import React from "react";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
-import keynoteImg from "../../resources/images/keynote.svg";
+import keynote_ufo from "../../resources/images/keynote-ufo.png";
 import "./keynote.scss"
 
 const Keynote = () => (
-    <SectionWrapper id="keynote">
-        <h1 className="keynote-title">
-            Keynote Speaker
-        </h1>
-        <div className="keynote-wrapper">
-            <div>
-            <img src={keynoteImg} alt="" className="keynote-image"/>
-            </div>
-            
-            <p className="keynote-text">
-                <h5 className="keynote-name">Roanne Sones</h5>
-                <h5 className="keynote-name">Corporate Vice President</h5>
-                Roanne is responsible for program management for engineering systems, operating systems, 
-                and edge products that span cloud-to-edge and edge-to-cloud including media services and 
-                hardware. Her team delivers the core OS platform from RTOS, to Linux, to Android, to Windows
-                 and across Microsoft devices and services including Azure, Windows, Windows Server, Xbox, 
-                 and Embedded/Internet of Things.
-            </p>
+  <SectionWrapper id="keynote">
+    <h1 className="keynote-title">Keynote Speaker</h1>
+    <div className="keynote-wrapper">
+      <div className="images">
+        <img src={keynote_ufo} alt="" className="ufo" />
+      </div>
+
+      <p className="keynote-text">
+        <div className="keynote-name-title">
+          <h3 className="keynote-name">Stephanie Mills</h3>
+          <h8 className="keynote-name">CEO and Founder of CodeGem</h8>
         </div>
-        
-    </SectionWrapper>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo, ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo hello.
+      </p>
+    </div>
+  </SectionWrapper>
 );
 
 export default Keynote;

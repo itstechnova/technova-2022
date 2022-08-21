@@ -107,21 +107,21 @@ const About = () => {
       </div>
       <div className="about-mobile">
         <Slider {...settings}>
-          <div className="slider-container">
+          <div className="about-slider-container">
             <img className="mobile-image" src={prepareMobile} alt="prepare-mobile" />
             <div className="mobile-text">
               <p>{about.prepareDates}</p>
               <p>{about.prepareCaption}</p>
             </div>
           </div>
-          <div className="slider-container">
+          <div className="about-slider-container">
             <img className="mobile-image" src={hackMobile} alt="hack-mobile" />
             <div className="mobile-text">
               <p>{about.hackDates}</p>
               <p>{about.hackCaption}</p>
             </div>
           </div>
-          <div className="slider-container">
+          <div className="about-slider-container">
             <img className="mobile-image" src={connectMobile} alt="connect-mobile" />
             <div className="mobile-text">
               <p>{about.connectDates}</p>
