@@ -21,7 +21,8 @@ import catherine2 from "../../resources/images/team/catherine2.png";
 import chatu from "../../resources/images/team/chatu.png";
 import chidi from "../../resources/images/team/chidi.JPG";
 import chidi2 from "../../resources/images/team/chidi2.JPG";
-import cindy from "../../resources/images/team/cindy.png";
+import cindy from "../../resources/images/team/cindy.JPG";
+import cindy2 from "../../resources/images/team/cindy2.jpg";
 import darya from "../../resources/images/team/darya.jpeg";
 import darya2 from "../../resources/images/team/darya2.jpeg";
 import dea from "../../resources/images/team/dea.jpeg";
@@ -65,36 +66,36 @@ const photos = [
     
     { hot: samantha, goof: samantha2, name: "Samantha Kaiser", role: "Finance Lead", linkedin: "https:/www.linkedin.com/in/samanthakaiser03/" },
     { hot: amandag, goof: amandag2, name: "Amanda Gressmann", role: "Finance Coordinator", linkedin: "" },
-    { hot: joyce, goof: joyce2, name: "Joyce Jorda", role: "Finance Coordinator", linkedin: "www.linkedin.com/in/joyce-jorda" },
+    { hot: joyce, goof: joyce2, name: "Joyce Jorda", role: "Finance Coordinator", linkedin: "https://www.linkedin.com/in/joyce-jorda" },
     { hot: goose, goof: goose, name: "Derya Gulsoy", role: "Finance Coordinator & Sponsorship Coordinator", LinkedIn: "" },
 
     { hot: bernie, goof: bernie2, name: "Bernadette Cheng", role: "Sponsorship Coordinator", linkedin: "https:/www.linkedin.com/in/bernadettecheng/" },
     { hot: darya, goof: darya2, name: "Darya Zakharova", role: "Sponsorship Coordinator", LinkedIn: "" },
-    { hot: kriti, goof: goose, name: "Kriti Sodhi", role: "Sponsorship Coordinator", LinkedIn: "www.linkedin.com/in/kriti-sodhi-629a981b5/" },
-    { hot: rachel, goof: rachel2, name: "Rachel Scott", role: "Sponsorship Coordinator", LinkedIn: "www.linkedin.com/in/rachel-scott-link" },
+    { hot: kriti, goof: goose, name: "Kriti Sodhi", role: "Sponsorship Coordinator", LinkedIn: "https://www.linkedin.com/in/kriti-sodhi-629a981b5/" },
+    { hot: rachel, goof: rachel2, name: "Rachel Scott", role: "Sponsorship Coordinator", LinkedIn: "https://www.linkedin.com/in/rachel-scott-link" },
 
-    { hot: chidi, goof: chidi2, name: "Chidinma Umenwofor-Nweze", role: "Logistics Lead", LinkedIn: "www.linkedin.com/in/chidinma-umenwofor-nweze-b92990195/" },
+    { hot: chidi, goof: chidi2, name: "Chidinma Umenwofor-Nweze", role: "Logistics Lead", LinkedIn: "https://www.linkedin.com/in/chidinma-umenwofor-nweze-b92990195/" },
     { hot: dea, goof: dea2, name: "Dea Gjini", role: "Logistics Coordinator", linkedin: "https:/www.linkedin.com/in/dea-gjini/" },
-    { hot: julianne, goof: julianne2, name: "Julianne Jorda", role: "Logistics Coordinator", LinkedIn: "www.linkedin.com/in/julianne-jorda" },
+    { hot: julianne, goof: julianne2, name: "Julianne Jorda", role: "Logistics Coordinator", LinkedIn: "https://www.linkedin.com/in/julianne-jorda" },
     { hot: angela, goof: angela2, name: "Angela Law", role: "Logistics Coordinator", LinkedIn: "https://www.linkedin.com/in/angela-law/" },
-    { hot: emily, goof: emily2, name: "Emily Zhu", role: "Logistics Coordinator", LinkedIn: "www.linkedin.com/in/emilyhy-zhu" },
+    { hot: emily, goof: emily2, name: "Emily Zhu", role: "Logistics Coordinator", LinkedIn: "https://www.linkedin.com/in/emilyhy-zhu" },
     { hot: goose, goof: goose, name: "Maggie Lin", role: "Logistics Coordinator", LinkedIn: "" },
     { hot: shihan, goof: shihan2, name: "Shi Han Qin", role: "Logistics Coordinator", LinkedIn: "" },
-    { hot: cindy, goof: goose, name: "Cindy Gu", role: "Logistics Coordinator", LinkedIn: "" },
+    { hot: cindy, goof: cindy2, name: "Cindy Gu", role: "Logistics Coordinator", LinkedIn: "https://www.linkedin.com/in/cindy-gu531/" },
 
     { hot: elizabeth, goof: elizabeth2, name: "Elizabeth Tatar", role: "Marketing Lead", LinkedIn: "" },
     { hot: alenka, goof: alenka2, name: "Alenka Rondon", role: "Marketing Coordinator", LinkedIn: "https://www.linkedin.com/in/alenka-rondon/" },
     { hot: jacquelyn, goof: goose, name: "Jacquelyn Yu", role: "Marketing Coordinator", LinkedIn: "" },
-    { hot: serena, goof: goose, name: "Serena Li", role: "Marketing Coordinator", LinkedIn: "www.linkedin.com/in/serena-li-03/" },
+    { hot: serena, goof: goose, name: "Serena Li", role: "Marketing Coordinator", LinkedIn: "https://www.linkedin.com/in/serena-li-03/" },
     
     { hot: kun, goof: kun2, name: "Kun Zhu", role: "Design Lead", linkedin: "https:/www.linkedin.com/in/kun-zhu/" },
     { hot: tianke, goof: tianke2, name: "Tianke Li", role: "Design Coordinator", linkedin: "https:/www.linkedin.com/in/tianke-li-57b7b4193/" },
     { hot: grace, goof: goose, name: "Grace Yang", role: "Design Coordinator", LinkedIn: "" },
     { hot: chatu, goof: goose, name: "Chatumini Crystal Kodikara", role: "Design Coordinator", LinkedIn: "" },
-    { hot: catherine, goof: catherine2, name: "Catherine Hoang", role: "Design Coordinator", LinkedIn: "www.linkedin.com/in/cat-hoang/" },
+    { hot: catherine, goof: catherine2, name: "Catherine Hoang", role: "Design Coordinator", LinkedIn: "https://www.linkedin.com/in/cat-hoang/" },
     { hot: ananya, goof: goose, name: "Ananya Jaikumar", role: "Design Coordinator", LinkedIn: "https://www.linkedin.com/in/ananya-jaikumar" },
 
-    { hot: amandat, goof: amandat2, name: "Amanda Tang", role: "Engineering Lead", LinkedIn: "www.linkedin.com/in/amanda-tang-509a7119b/" },
+    { hot: amandat, goof: amandat2, name: "Amanda Tang", role: "Engineering Lead", LinkedIn: "https://www.linkedin.com/in/amanda-tang-509a7119b/" },
     { hot: fariha, goof: fariha2, name: "Mahzabin Fariha", role: "Engineering Coordinator", LinkedIn: "https://www.linkedin.com/in/mahzabin-rashid/" },
     { hot: kelly, goof: goose, name: "Kelly Wu", role: "Engineering Coordinator", LinkedIn: "" },
 ]
@@ -170,9 +171,10 @@ const Team = () => {
                     })}
                 </Slider>
                 <div className="team-text">
-                    <p className="team-text-default">{photos[id].name} | {photos[id].role}</p>
+                    <p className="team-text-default">{photos[id].name} | {photos[id].role }</p>
                     <p className="team-text-mobile">{photos[id].name} <br /> {photos[id].role}</p>
-                    <SocialMediaLink className="team-linkedin" src={linkedin} link={photos[id].linkedin} />
+                    <p>&nbsp;&nbsp;</p>
+                    { photos[id].LinkedIn ? <SocialMediaLink className="team-linkedin" src={linkedin} link={photos[id].LinkedIn} /> : "" }                    
                 </div>
             </div>
         </SectionWrapper>

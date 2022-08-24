@@ -46,7 +46,8 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 45px;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
 
         &-default {
             display: block;
