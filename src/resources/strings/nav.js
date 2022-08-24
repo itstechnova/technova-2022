@@ -6,7 +6,8 @@ const nav = {
     sponsor: "Sponsors",
     story: "Our Story",
     keynote: "Keynote",
-    judges: "Judges"
+    judges: "Judges",
+    team: "Team"
 };
 
 export default nav;
