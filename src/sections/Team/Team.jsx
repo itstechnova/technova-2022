@@ -9,6 +9,7 @@ import amandag from "../../resources/images/team/amandag.jpeg";
 import amandag2 from "../../resources/images/team/amandag2.jpg";
 import amandat from "../../resources/images/team/amandat.jpg";
 import amandat2 from "../../resources/images/team/amandat2.jpg";
+import ananya from "../../resources/images/team/ananya.png";
 import angela from "../../resources/images/team/angela.jpg";
 import angela2 from "../../resources/images/team/angela2.jpg";
 import ayla from "../../resources/images/team/ayla.jpeg";
@@ -91,6 +92,7 @@ const photos = [
     { hot: grace, goof: goose, name: "Grace Yang", role: "Design Coordinator", LinkedIn: "" },
     { hot: chatu, goof: goose, name: "Chatumini Crystal Kodikara", role: "Design Coordinator", LinkedIn: "" },
     { hot: catherine, goof: catherine2, name: "Catherine Hoang", role: "Design Coordinator", LinkedIn: "www.linkedin.com/in/cat-hoang/" },
+    { hot: ananya, goof: goose, name: "Ananya Jaikumar", role: "Design Coordinator", LinkedIn: "https://www.linkedin.com/in/ananya-jaikumar" },
 
     { hot: amandat, goof: amandat2, name: "Amanda Tang", role: "Engineering Lead", LinkedIn: "www.linkedin.com/in/amanda-tang-509a7119b/" },
     { hot: fariha, goof: fariha2, name: "Mahzabin Fariha", role: "Engineering Coordinator", LinkedIn: "https://www.linkedin.com/in/mahzabin-rashid/" },
