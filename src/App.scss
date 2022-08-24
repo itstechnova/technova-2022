@@ -74,10 +74,6 @@ body {
         background-color: var(--sponsor-logos);
     }
     .team {
-        &-text {
-            background-color: var(--background-color);
-            transition: all 0.25s linear;
-        }
         &-photos {
             img {
                 -moz-box-shadow: 5px 5px 0 var(--image-shadow-color);

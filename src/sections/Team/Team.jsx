@@ -1,79 +1,103 @@
 import React, { useState } from "react";
+import Slider from "react-slick";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 
 import "./Team.scss";
-import alex from "../../resources/images/team/alex.jpg"
-import alex2 from "../../resources/images/team/alex2.jpg"
-import amyl from "../../resources/images/team/amyl.jpg"
-import amyl2 from "../../resources/images/team/amyl2.jpg"
-import amys from "../../resources/images/team/amys.jpg"
-import amys2 from "../../resources/images/team/amys2.jpg"
-import annette from "../../resources/images/team/annette.jpg"
-import annette2 from "../../resources/images/team/annette2.jpg"
-import annie from "../../resources/images/team/annie.jpg"
-import annie2 from "../../resources/images/team/annie2.jpg"
-import ayla from "../../resources/images/team/ayla.jpg"
-import ayla2 from "../../resources/images/team/ayla2.jpg"
-import bernie from "../../resources/images/team/bernie.png"
-import bernie2 from "../../resources/images/team/bernie2.png"
-import bonnie from "../../resources/images/team/bonnie.jpg"
-import bonnie2 from "../../resources/images/team/bonnie2.jpg"
-import brittney from "../../resources/images/team/brittney.jpeg"
-import brittney2 from "../../resources/images/team/brittney2.jpeg"
-import caroline from "../../resources/images/team/caroline.jpg"
-import caroline2 from "../../resources/images/team/caroline2.png"
-import celine from "../../resources/images/team/celine.png"
-import celine2 from "../../resources/images/team/celine2.jpg"
-import dea from "../../resources/images/team/dea.jpg"
-import dea2 from "../../resources/images/team/dea2.jpg"
-import faith from "../../resources/images/team/faith.jpeg"
-import faith2 from "../../resources/images/team/faith2.png"
-import grace from "../../resources/images/team/grace.jpg"
-import grace2 from "../../resources/images/team/grace2.jpg"
-import jas from "../../resources/images/team/jas.jpg"
-import jas2 from "../../resources/images/team/jas2.jpg"
-import kaylee from "../../resources/images/team/kaylee.jpg"
-import kaylee2 from "../../resources/images/team/kaylee2.jpg"
-import kun from "../../resources/images/team/kun.jpg"
-import kun2 from "../../resources/images/team/kun2.jpg"
-import lucy from "../../resources/images/team/lucy.jpg"
-import lucy2 from "../../resources/images/team/lucy2.jpg"
-import mehak from "../../resources/images/team/mehak.jpg"
-import mehak2 from "../../resources/images/team/mehak2.jpg"
-import prianka from "../../resources/images/team/prianka.jpg"
-import prianka2 from "../../resources/images/team/prianka2.jpg"
-import sam from "../../resources/images/team/sam.jpg"
-import sam2 from "../../resources/images/team/sam2.jpg"
-import tianke from "../../resources/images/team/tianke.jpg"
-import tianke2 from "../../resources/images/team/tianke2.jpg"
+import alenka from "../../resources/images/team/alenka.jpg";
+import alenka2 from "../../resources/images/team/alenka2.jpg";
+import amandag from "../../resources/images/team/amandag.jpeg";
+import amandag2 from "../../resources/images/team/amandag2.jpg";
+import amandat from "../../resources/images/team/amandat.jpg";
+import amandat2 from "../../resources/images/team/amandat2.jpg";
+import ananya from "../../resources/images/team/ananya.png";
+import angela from "../../resources/images/team/angela.jpg";
+import angela2 from "../../resources/images/team/angela2.jpg";
+import ayla from "../../resources/images/team/ayla.jpeg";
+import ayla2 from "../../resources/images/team/ayla2.jpeg";
+import bernie from "../../resources/images/team/bernie.png";
+import bernie2 from "../../resources/images/team/bernie2.png";
+import catherine from "../../resources/images/team/catherine.jpeg";
+import catherine2 from "../../resources/images/team/catherine2.png";
+import chatu from "../../resources/images/team/chatu.png";
+import chidi from "../../resources/images/team/chidi.JPG";
+import chidi2 from "../../resources/images/team/chidi2.JPG";
+import cindy from "../../resources/images/team/cindy.JPG";
+import cindy2 from "../../resources/images/team/cindy2.jpg";
+import darya from "../../resources/images/team/darya.jpeg";
+import darya2 from "../../resources/images/team/darya2.jpeg";
+import dea from "../../resources/images/team/dea.jpeg";
+import dea2 from "../../resources/images/team/dea2.jpeg";
+import elizabeth from "../../resources/images/team/elizabeth.jpg";
+import elizabeth2 from "../../resources/images/team/elizabeth2.jpg";
+import emily from "../../resources/images/team/emily.jpg";
+import emily2 from "../../resources/images/team/emily2.jpg";
+import fariha from "../../resources/images/team/fariha.jpeg";
+import fariha2 from "../../resources/images/team/fariha2.jpg";
+import grace from "../../resources/images/team/grace.png";
+import jacquelyn from "../../resources/images/team/jacquelyn.png";
+import joyce from "../../resources/images/team/joyce.jpeg";
+import joyce2 from "../../resources/images/team/joyce2.jpeg";
+import julianne from "../../resources/images/team/julianne.JPG";
+import julianne2 from "../../resources/images/team/julianne2.JPG";
+import kelly from "../../resources/images/team/kelly.png";
+import kriti from "../../resources/images/team/kriti.jpg";
+import kun from "../../resources/images/team/kun.jpg";
+import kun2 from "../../resources/images/team/kun2.jpg";
+import lucy from "../../resources/images/team/lucy.png";
+import lucy2 from "../../resources/images/team/lucy2.png";
+import rachel from "../../resources/images/team/rachel.png";
+import rachel2 from "../../resources/images/team/rachel2.png";
+import samantha from "../../resources/images/team/samantha.jpg";
+import samantha2 from "../../resources/images/team/samantha2.jpg";
+import serena from "../../resources/images/team/serena.png";
+import shihan from "../../resources/images/team/shihan.jpg";
+import shihan2 from "../../resources/images/team/shihan2.jpg";
+import tianke from "../../resources/images/team/tianke.png";
+import tianke2 from "../../resources/images/team/tianke2.jpg";
+import goose from "../../resources/images/team/goose.png";
 
 
 import SocialMediaLink from "../../components/SocialMediaLink/SocialMediaLink";
-import linkedin from "../../resources/images/socials/linkedinFill.svg";
+import linkedin from "../../resources/images/socials/linkedinTeam.svg";
 
 const photos = [
-    { hot: alex, goof: alex2, name: "Alex Bray (she/her)", role: "Design Co-Lead", linkedin: "https://www.linkedin.com/in/alex-bray-/" },
-    { hot: amyl, goof: amyl2, name: "Amy Li (she/her)", role: "Logistics Coordinator", linkedin: "https://www.linkedin.com/in/aamyli/" },
-    { hot: amys, goof: amys2, name: "Amy Shao (she/her)", role: "Engineering Lead", linkedin: "https://www.linkedin.com/in/amy-shao-/" },
-    { hot: annette, goof: annette2, name: "Annette Le (she/her)", role: "Marketing Lead", linkedin: "http://linkedin.com/in/annettele/" },
-    { hot: annie, goof: annie2, name: "Annie Zhou (she/her)", role: "Sponsorship Lead", linkedin: "https://www.linkedin.com/in/annie-zhou-08/" },
-    { hot: ayla, goof: ayla2, name: "Ayla Orucevic (she/her)", role: "Co-Director, Founder", linkedin: "https://www.linkedin.com/in/ayla/" },
-    { hot: bernie, goof: bernie2, name: "Bernadette Cheng (she/her)", role: "Sponsorship Coordinator", linkedin: "https://www.linkedin.com/in/bernadettecheng/" },
-    { hot: bonnie, goof: bonnie2, name: "Bonnie Peng (she/her)", role: "Logistics Coordinator", linkedin: "https://www.linkedin.com/in/bonniepeng/" },
-    { hot: brittney, goof: brittney2, name: "Brittney Cheng (she/her)", role: "Design Co-Lead", linkedin: "https://www.linkedin.com/in/brittney-cheng/" },
-    { hot: caroline, goof: caroline2, name: "Caroline Chen (she/her)", role: "Co-Director, Founder", linkedin: "https://www.linkedin.com/in/itscarolinechen/" },
-    { hot: celine, goof: celine2, name: "Celine Nguyen (she/her)", role: "Logistics Lead", linkedin: "https://www.linkedin.com/in/celineqnnguyen/" },
-    { hot: dea, goof: dea2, name: "Dea Gjini (she/her)", role: "Logistics Coordinator", linkedin: "https://www.linkedin.com/in/dea-gjini/" },
-    { hot: faith, goof: faith2, name: "Faith Lum (she/her)", role: "Logistics Coordinator", linkedin: "https://www.linkedin.com/in/faithlum/" },
-    { hot: grace, goof: grace2, name: "Grace Nguyen (she/her)", role: "Sponsorship Coordinator", linkedin: "https://www.linkedin.com/in/grace-nguyen-ba5028158/" },
-    { hot: jas, goof: jas2, name: "Jasmine Bal (she/her)", role: "Co-Director, Founder", linkedin: "https://www.linkedin.com/in/jasminekbal/" },
-    { hot: kaylee, goof: kaylee2, name: "Kaylee Ainsworth (she/they)", role: "Marketing Coordinator, Designer", linkedin: "http://linkedin.com/in/kaylee-ainsworth/" },
-    { hot: kun, goof: kun2, name: "Kun Zhu (she/her)", role: "Designer", linkedin: "https://www.linkedin.com/in/kun-zhu/" },
-    { hot: lucy, goof: lucy2, name: "Lucy Shen (she/her)", role: "Finance Lead, Sponsorship Coordinator", linkedin: "https://www.linkedin.com/in/lucy-shen/" },
-    { hot: mehak, goof: mehak2, name: "Mehak Dhaliwal (she/her)", role: "Logistics Coordinator", linkedin: "http://www.linkedin.com/in/mehak-dhaliwal" },
-    { hot: prianka, goof: prianka2, name: "Prianka Hoque (she/her)", role: "Sponsorship Coordinator", linkedin: "https://www.linkedin.com/in/prianka-hoque/" },
-    { hot: sam, goof: sam2, name: "Samantha Kaiser (she/her)", role: "Finance Coordinator, Logistics Coordinator", linkedin: "https://www.linkedin.com/in/samanthakaiser03/" },
-    { hot: tianke, goof: tianke2, name: "Tianke Li (she/her)", role: "Designer", linkedin: "https://www.linkedin.com/in/tianke-li-57b7b4193/" },
+    { hot: lucy, goof: lucy2, name: "Lucy Shen", role: "Director", linkedIn: "https:/www.linkedin.com/in/lucy-shen/" },
+    { hot: ayla, goof: ayla2, name: "Ayla Orucevic", role: "Advisor", linkedIn: "https:/www.linkedin.com/in/ayla/" },
+    
+    { hot: samantha, goof: samantha2, name: "Samantha Kaiser", role: "Finance Lead", linkedIn: "https:/www.linkedin.com/in/samanthakaiser03/" },
+    { hot: amandag, goof: amandag2, name: "Amanda Gressmann", role: "Finance Coordinator", linkedIn: "" },
+    { hot: joyce, goof: joyce2, name: "Joyce Jorda", role: "Finance Coordinator", linkedIn: "https://www.linkedin.com/in/joyce-jorda/" },
+    { hot: goose, goof: goose, name: "Derya Gulsoy", role: "Finance Coordinator & Sponsorship Coordinator", linkedIn: "" },
+
+    { hot: bernie, goof: bernie2, name: "Bernadette Cheng", role: "Sponsorship Coordinator", linkedIn: "https:/www.linkedin.com/in/bernadettecheng/" },
+    { hot: darya, goof: darya2, name: "Darya Zakharova", role: "Sponsorship Coordinator", linkedIn: "" },
+    { hot: kriti, goof: goose, name: "Kriti Sodhi", role: "Sponsorship Coordinator", linkedIn: "https://www.linkedin.com/in/kriti-sodhi-629a981b5/" },
+    { hot: rachel, goof: rachel2, name: "Rachel Scott", role: "Sponsorship Coordinator", linkedIn: "https://www.linkedin.com/in/rachel-scott-link" },
+
+    { hot: chidi, goof: chidi2, name: "Chidinma Umenwofor-Nweze", role: "Logistics Lead", linkedIn: "https://www.linkedin.com/in/chidinma-umenwofor-nweze-b92990195/" },
+    { hot: dea, goof: dea2, name: "Dea Gjini", role: "Logistics Coordinator", linkedIn: "https:/www.linkedin.com/in/dea-gjini/" },
+    { hot: julianne, goof: julianne2, name: "Julianne Jorda", role: "Logistics Coordinator", linkedIn: "https://www.linkedin.com/in/julianne-jorda/" },
+    { hot: angela, goof: angela2, name: "Angela Law", role: "Logistics Coordinator", linkedIn: "https://www.linkedin.com/in/angela-law/" },
+    { hot: emily, goof: emily2, name: "Emily Zhu", role: "Logistics Coordinator", linkedIn: "https://www.linkedin.com/in/emilyhy-zhu/" },
+    { hot: goose, goof: goose, name: "Maggie Lin", role: "Logistics Coordinator", linkedIn: "" },
+    { hot: shihan, goof: shihan2, name: "Shi Han Qin", role: "Logistics Coordinator", linkedIn: "" },
+    { hot: cindy, goof: cindy2, name: "Cindy Gu", role: "Logistics Coordinator", linkedIn: "https://www.linkedin.com/in/cindy-gu531/" },
+
+    { hot: elizabeth, goof: elizabeth2, name: "Elizabeth Tatar", role: "Marketing Lead", linkedIn: "" },
+    { hot: alenka, goof: alenka2, name: "Alenka Rondon", role: "Marketing Coordinator", linkedIn: "https://www.linkedin.com/in/alenka-rondon/" },
+    { hot: jacquelyn, goof: goose, name: "Jacquelyn Yu", role: "Marketing Coordinator", linkedIn: "" },
+    { hot: serena, goof: goose, name: "Serena Li", role: "Marketing Coordinator", linkedIn: "https://www.linkedin.com/in/serena-li-03/" },
+    
+    { hot: kun, goof: kun2, name: "Kun Zhu", role: "Design Lead", linkedIn: "https:/www.linkedin.com/in/kun-zhu/" },
+    { hot: tianke, goof: tianke2, name: "Tianke Li", role: "Design Coordinator", linkedIn: "https:/www.linkedin.com/in/tianke-li-57b7b4193/" },
+    { hot: grace, goof: goose, name: "Grace Yang", role: "Design Coordinator", linkedIn: "" },
+    { hot: chatu, goof: goose, name: "Chatumini Crystal Kodikara", role: "Design Coordinator", linkedIn: "" },
+    { hot: catherine, goof: catherine2, name: "Catherine Hoang", role: "Design Coordinator", linkedIn: "https://www.linkedin.com/in/cat-hoang/" },
+    { hot: ananya, goof: goose, name: "Ananya Jaikumar", role: "Design Coordinator", linkedIn: "https://www.linkedin.com/in/ananya-jaikumar" },
+
+    { hot: amandat, goof: amandat2, name: "Amanda Tang", role: "Engineering Lead", linkedIn: "https://www.linkedin.com/in/amanda-tang-509a7119b/" },
+    { hot: fariha, goof: fariha2, name: "Mahzabin Fariha", role: "Engineering Coordinator", linkedIn: "https://www.linkedin.com/in/mahzabin-rashid/" },
+    { hot: kelly, goof: goose, name: "Kelly Wu", role: "Engineering Coordinator", linkedIn: "" },
 ]
 
 const PhotoCard = (props) => {
@@ -102,24 +126,55 @@ const PhotoCard = (props) => {
 
 const Team = () => {
     const [id, setId] = useState(0);
+
+    const settings = {
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        speed: 500,
+        rows: 2,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+        dots: true,
+        responsive: [
+            {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+            }
+            },
+            {
+            breakpoint: 650,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+            }
+        ]
+    };
+
     return (
         <SectionWrapper id="team">
             <div className="team-container">
-                <div className="team-text">
-                    <h2>Meet the Team</h2>
-                    <div>
-                        <SocialMediaLink src={linkedin} link={photos[id].linkedin} />
-                        <p className="team-text-default">{photos[id].name} | {photos[id].role}</p>
-                        <p className="team-text-mobile">{photos[id].name} <br /> {photos[id].role}</p>
-                    </div>
-
+                <div className="team-title">
+                    <h1>Meet the Team</h1>
                 </div>
-                <div className="team-photos">
+                <Slider {...settings}>
                     {photos.map((photo, index) => {
                         return (
-                            <PhotoCard photo={photo} id={index} onHover={() => setId(index)} />
+                            <div className="team-photo">
+                                <PhotoCard photo={photo} id={index} onHover={() => setId(index)} />
+                            </div>
                         )
                     })}
+                </Slider>
+                <div className="team-text">
+                    <p className="team-text-default">{photos[id].name} | {photos[id].role }</p>
+                    <p className="team-text-mobile">{photos[id].name} <br /> {photos[id].role}</p>
+                    <p>&nbsp;&nbsp;</p>
+                    { photos[id].linkedIn ? <SocialMediaLink className="team-linkedin" src={linkedin} link={photos[id].linkedIn} /> : "" }                    
                 </div>
             </div>
         </SectionWrapper>

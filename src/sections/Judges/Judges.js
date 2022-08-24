@@ -14,7 +14,7 @@ import cressa_price from "../../resources/images/judges/cressa-price.jpg";
 import chayene_banta from "../../resources/images/judges/chayene-banta.png";
 import anne_nagle from "../../resources/images/judges/anne-nagle.jpg";
 import karan_huynh from "../../resources/images/judges/karan-huynh.png";
-import judgeG from "../../resources/images/judges/judgeG.svg";
+import judgeG from "../../resources/images/judges/judgeG.png";
 
 const judgeList = [
   {
