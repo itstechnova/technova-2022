@@ -9,7 +9,7 @@ import SponsorUs from "./sections/Sponsor/SponsorUs";
 import FAQ from "./sections/FAQ/FAQ";
 import Contact from "./sections/Contact/Contact";
 import Team from "./sections/Team/Team";
-import Keynote from "./sections/Keynote/Keynote";
+//import Keynote from "./sections/Keynote/Keynote";
 import Judges from "./sections/Judges/Judges";
 import Footer from "./sections/Footer/Footer";
 import logo from "./resources/images/logo/logo.png";
@@ -21,7 +21,7 @@ const logoRoute = { logoSrc: logo, sectionId: "landing" };
 const routes = [
   { label: nav.about, sectionId: "about" },
   { label: nav.sponsor, sectionId: "sponsor" },
-  { label: nav.keynote, sectionId: "keynote" },
+//   { label: nav.keynote, sectionId: "keynote" },
   { label: nav.judges, sectionId: "judges" },
   { label: nav.faq, sectionId: "faq" },
   { label: nav.team, sectionId: "team" },
@@ -79,7 +79,7 @@ const App = () => {
                 <Testimonials />
                 <Partners />
                 <SponsorUs />
-                <Keynote />
+                {/* <Keynote /> */}
                 <Judges />
                 <FAQ />
                 <Team />
