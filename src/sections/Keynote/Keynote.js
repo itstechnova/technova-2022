@@ -16,11 +16,10 @@ const Keynote = () => (
           <h3 className="keynote-name">Stephanie Mills</h3>
           <h8 className="keynote-name">CEO and Founder of CodeGem</h8>
         </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo, ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo hello.
+        Stephanie Mills is a 2020 Thiel fellow, and the CEO and founder of CodeGem; a people-first 
+        management platform built for software teams. CodeGem was inspired by her combined experience 
+        studying management engineering at UWaterloo and working as a software engineer at top companies 
+        like Apple, Uber, Dapper, and Deloitte.
       </p>
     </div>
   </SectionWrapper>
